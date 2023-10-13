@@ -20,6 +20,13 @@
             @font-face { font-family: 'Lexia Rg'; src: url("./fonts/Lexia_Rg.ttf"); }
             @font-face { font-family: 'Lexia Bold'; src: url("./fonts/Lexia_Bd.ttf");}
             @font-face { font-family: 'Helvetica'; src: url("./fonts/HelveticaNeue.ttc");}
+		@font-face {font-family: "Avenir Bd";src: url("./fonts/AvenirLTStd-Heavy.otf");}
+		text {
+			font-family: "Avenir Bd"!important;
+		}
+		text.st3.st10.st13 {
+			font-family: "Avenir Bd"!important;
+		}
 
             body {
                   margin: 0px;
@@ -180,7 +187,63 @@
 		}
 		h2.re-active {
 			font-size: 70px;
-			color: #00325b;
+			color: #3c1152;
+		}
+		.bottom-nav {
+    			position: absolute;
+			bottom: 0px;
+			width: 72%;
+			left: 95px;
+			/* margin-left: 68px; */
+			display: flex;
+			justify-content: space-evenly;
+			height: 70px;
+		}
+		.bottom-nav div {
+			width: 33%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.line-pink {
+			position: absolute;
+			bottom: 0px;
+			left: -10px;
+			height: 55px;
+			width: 378px!important;
+			border-bottom: 10px solid transparent;
+			z-index: 99;
+		}
+		.line-purple {
+			position: absolute;
+			bottom: 0px;
+			left: 400px;
+			height: 55px;
+			width: 372px!important;
+			border-bottom: 10px solid transparent;
+			z-index: 99;
+		}
+		.line-dark-blue {
+			position: absolute;
+			bottom: 0px;
+			left: 806px;
+			height: 55px;
+			width: 580px!important;
+			border-bottom: 10px solid transparent;
+			z-index: 99;
+		}
+		.line-pink.active{
+			border-bottom: 10px solid #d10066;
+		}
+		.line-purple.active{
+			border-bottom: 10px solid #3c1152;
+		}
+		.line-dark-blue.active{
+			border-bottom: 10px solid #003764;
+		}
+		.bottom-nav img {
+			width: 100%;
+			height: 55px;
 		}
             /* ACTIVE STATES */
             .active path{
@@ -198,17 +261,6 @@
                   font-size: 32px;
                   margin: 0;
             }
-            p.kbinder-bm, p.recurrence-bm, p.raasi-bm {
-                  padding: 0px 60px 20px 60px;
-                  font-weight: 500;
-            }
-            p.kbinder-bm.active, p.recurrence-bm.active, p.raasi-bm.active  {
-                  padding-bottom: 10px;
-                  font-weight: 900;
-            }
-            p.kbinder-bm.active {
-                  border-bottom: 10px solid #D6006D;
-            }
             p.recurrence-bm.active  {
                   border-bottom: 10px solid #3D1152;
             }
@@ -223,11 +275,40 @@
 		}
 		p.onlynum {
 			position: absolute;
-			top: 283px;
+			top: 288px;
 			z-index: 99;
 			font-size: 67px;
 			left: 770px;
 			color: #D6006D;
+			display: flex;
+			font-family: 'Avenir Bd';
+		}
+		p.opt-bf {
+    			position: absolute;
+			top: 208px;
+			left: 627px;
+			z-index: 5;
+			font-size: 131px;
+			display:flex;
+			font-family: 'Avenir Bd';
+			color: #003764;
+		}
+		p.o-use {
+			position: absolute;
+			top: 300px;
+			left: 1210px;
+			z-index: 5;
+			font-size: 78px;
+			display:flex;
+			font-family: 'Avenir Bd';
+			color: #003764;
+		}
+		p.opt-bf span {
+			font-size: 77px;
+			margin-left: 5px;
+		}
+		p.o-use span {
+			font-size: 50px;
 		}
             /*=========================================*/
 		/* ACTIVE SCREENS SELECTED */
@@ -278,6 +359,44 @@
 			bottom: 19px;
 			left: 539px;
 		}
+		img.kTitle, img.raTitle{
+			width: 90%;
+			margin: 0 auto;
+		}
+		img.reTitle{
+			width: 80%;
+			margin: 0 auto;
+		}
+		img.homeTitle {
+			width: 80%;
+			margin: 0 auto;
+		}
+		p.state-n {
+			position: absolute;
+			top: 362px;
+			right: 1062px;
+			z-index: 5;
+			font-size: 35px;
+			font-family: 'Avenir Bd';
+		}
+		p.precurrence {
+			position: absolute;
+			top: 330px;
+			left: 645px;
+			font-size: 110px;
+			z-index: 5;
+			display:flex;
+			color: #3c1152;
+			font-family: 'Avenir Bd';
+		}
+		p.precurrence span {
+			font-size: 70px;
+			margin-left: 5px;
+		}
+		.onlynum span {
+			font-size: 40px;
+			margin-left: 5px;
+		}
             /* ANIMATION BASE TO MOVE STATE TO LEFT */
 		/*IN*/
 		.visible {
@@ -311,14 +430,17 @@
 				transform: translate(-497px, -28%);
 			}
 		}
+		
       </style>
 </head>
 <body style="margin: 0; padding: 0;">
       <div class="app">
 		<img class="base hidden" src="./assets/K_binders_guide.png"/>
             <div class="upper-text">
-                  <h1 id="upper-title">How often do you see HK in patiens</h1>
-                  <p id="upper-subtitle">with CKD in your state?</p>
+			<img class="homeTitle" src="./assets/data_topics_guide.png"/>
+			<img class="kTitle hidden" src="./assets/title_K+_binders.png"/>
+			<img class="reTitle hidden" src="./assets/title_recurrence.png"/>
+			<img class="raTitle hidden" src="./assets/title_RAASi.png"/>
             </div>
             <div id="definitions" class="hidden" onclick="hidePopUp(this)">
                   <img src="./assets/POPUP_1_definitions.png" alt="Definitions"/>
@@ -11785,12 +11907,18 @@ hK2iJhPzXNK04Z9RHms0XCDjERq2oRwSyoraB0MRsV2suIlQakXNCarxIeBMSE2Bccxva+jtFQ==
 </div>
 <div id="recurrence" class="hidden">
 	<h2>patients diagnosed with <span class="bold">HK</span></h2>
+	<p class="pnum"></p>
+	<p class="precurrence"></p>
+	<p class="state-n"></p>
 	<img class="left" src="./assets/card_recurrence_left.png"/>
 	<img class="center" src="./assets/card_recurrence_center.png"/>
 	<img class="right"src="./assets/card_recurrence_right.png"/>
 </div>
 <div id="raasi" class="hidden">
+	<p class="pnum"></p>
 	<h2>patients diagnosed with <span class="bold">HK</span></h2>
+	<p class="opt-bf"></p>
+	<p class="o-use"></p>
 	<img class="left" src="./assets/card_RAASi_left.png"/>
 	<img class="center" src="./assets/card_RAASi_center.png"/>
 	<img class="right"src="./assets/card_RAASi_right.png"/>
@@ -11807,6 +11935,13 @@ hK2iJhPzXNK04Z9RHms0XCDjERq2oRwSyoraB0MRsV2suIlQakXNCarxIeBMSE2Bccxva+jtFQ==
             <div class="out-bottom">
 			<div class="home-btn" onclick="reset()"></div>
             </div>
+		<div class="bottom-nav hidden">
+			<div class="line-pink"></div>
+			<div class="line-purple"></div>
+			<div class="line-dark-blue"></div>
+			<img src="./assets/RAASi_guide_3.png" />
+		</div>
+		<div id="step" class="hidden home-step"></div>
       </div>
       <script src="/socket.io/socket.io.js"></script>
       <script>
@@ -11881,6 +12016,8 @@ hK2iJhPzXNK04Z9RHms0XCDjERq2oRwSyoraB0MRsV2suIlQakXNCarxIeBMSE2Bccxva+jtFQ==
                         //ON CLICK ADD ACTIVE CLASS 
                         $(this).toggleClass('active')
                         $('.data-btns').toggleClass('hidden')
+				$("#step").removeClass('home-step')
+				$("#step").addClass('state-select-step')
                         $('.data-btns').attr('data-active', c.slice(0,c.length))
                   })
             } 
@@ -11896,9 +12033,20 @@ hK2iJhPzXNK04Z9RHms0XCDjERq2oRwSyoraB0MRsV2suIlQakXNCarxIeBMSE2Bccxva+jtFQ==
 			$('#kbinder').toggleClass('hidden')
 			$('.map-header-text').text(`${stateData.state_name}`)
 			$('.map-header-text').addClass('k-active')
+			$('.kTitle').toggleClass('hidden')
+			$('.homeTitle').toggleClass('hidden')
+			$("#step").removeClass('state-select-step')
+			$("#step").addClass('detail-k')
+			$('.bottom-nav').toggleClass('hidden')
+			$('.line-pink').addClass('active')
+
 
 			$('.pnum').text(`${stateData.number_of_diagnosed_hk_patients}`)
-			$('.onlynum').text(`${stateData.kbinder_utilization_recurrence}%`)
+			$('.onlynum').html(`${stateData.kbinder_utilization_recurrence}<span>%</span>`)
+			$('.precurrence').html(`${stateData.hk_recurrence}<span>%</span>`)
+			$('.state-n').text(`${stateData.state_name}`)
+			$('.opt-bf').html(`${stateData.percent_rassi_optimization_before_hk}<span>%</span>`)
+			$('.o-use').html(`${stateData.percent_overall_rassi_use}<span>%</span>`)
 
 			$("g#INDIVIDUAL_STATES_Full_Map_Master g").each(function () {
 				if ($(this).attr("id") !== mid) {
@@ -11919,6 +12067,20 @@ hK2iJhPzXNK04Z9RHms0XCDjERq2oRwSyoraB0MRsV2suIlQakXNCarxIeBMSE2Bccxva+jtFQ==
 			$('#recurrence').toggleClass('hidden')
 			$('.map-header-text').text(`${stateData.state_name}`)
 			$('.map-header-text').addClass('re-active')
+			$('.reTitle').toggleClass('hidden')
+			$('.homeTitle').toggleClass('hidden')
+			$("#step").removeClass('state-select-step')
+			$("#step").addClass('detail-re')
+			$('.bottom-nav').toggleClass('hidden')
+			$('.line-purple').addClass('active')
+
+			$('.pnum').text(`${stateData.number_of_diagnosed_hk_patients}`)
+			$('.onlynum').html(`${stateData.kbinder_utilization_recurrence}<span>%</span>`)
+			$('.precurrence').html(`${stateData.hk_recurrence}<span>%</span>`)
+			$('.state-n').text(`${stateData.state_name}`)
+			$('.opt-bf').html(`${stateData.percent_rassi_optimization_before_hk}<span>%</span>`)
+			$('.o-use').html(`${stateData.percent_overall_rassi_use}<span>%</span>`)
+
 			$("g#INDIVIDUAL_STATES_Full_Map_Master g").each(function () {
 				if ($(this).attr("id") !== mid) {
 					$(this).addClass("fade");
@@ -11937,37 +12099,25 @@ hK2iJhPzXNK04Z9RHms0XCDjERq2oRwSyoraB0MRsV2suIlQakXNCarxIeBMSE2Bccxva+jtFQ==
 			$('#raasi').toggleClass('hidden')
 			$('.map-header-text').text(`${stateData.state_name}`)
 			$('.map-header-text').addClass('r-active')
+			$('.raTitle').toggleClass('hidden')
+			$('.homeTitle').toggleClass('hidden')
+			$("#step").removeClass('state-select-step')
+			$("#step").addClass('detail-ra')
+			$('.bottom-nav').toggleClass('hidden')
+			$('.line-dark-blue').addClass('active')
+
+			$('.pnum').text(`${stateData.number_of_diagnosed_hk_patients}`)
+			$('.onlynum').html(`${stateData.kbinder_utilization_recurrence}<span>%</span>`)
+			$('.precurrence').html(`${stateData.hk_recurrence}<span>%</span>`)
+			$('.state-n').text(`${stateData.state_name}`)
+			$('.opt-bf').html(`${stateData.percent_rassi_optimization_before_hk}<span>%</span>`)
+			$('.o-use').html(`${stateData.percent_overall_rassi_use}<span>%</span>`)
+
 			$("g#INDIVIDUAL_STATES_Full_Map_Master g").each(function () {
 				if ($(this).attr("id") !== mid) {
 					$(this).addClass("fade");
 				}
 			});
-            })
-
-		// BOTTOM NAV 
-            $('.kbinder-bm').on('click', function (e){
-                  console.log($(this))
-			e.stopPropagation()
-                  $('.kbinder-bm').removeClass('active')
-                  $('.raasi-bm').removeClass('active')
-                  $('.recurrence-bm').removeClass('active')
-                  $(this).addClass('active')
-            })
-            $('.recurrence-bm').on('click', function (e){
-                  console.log($(this))
-			e.stopPropagation()
-                  $('.kbinder-bm').removeClass('active')
-                  $('.raasi-bm').removeClass('active')
-                  $('.recurrence-bm').removeClass('active')
-                  $(this).addClass('active')
-            })
-            $('.raasi-bm').on('click', function (e){
-			e.stopPropagation()
-                  console.log($(this))
-                  $('.kbinder-bm').removeClass('active')
-                  $('.raasi-bm').removeClass('active')
-                  $('.recurrence-bm').removeClass('active')
-                  $(this).addClass('active')
             })
 		//HIDE OUT BUTTONS IF USE WANTS TO SWITCH STATE
 		const hide = (t) =>{
@@ -11981,26 +12131,94 @@ hK2iJhPzXNK04Z9RHms0XCDjERq2oRwSyoraB0MRsV2suIlQakXNCarxIeBMSE2Bccxva+jtFQ==
             const hidePopUp = (m) => {
                   $(m).toggleClass('hidden')
             }
+		// BOTTOM NAV 
+		$('.line-pink').on('click', function(){
+			$('.bottom-nav div').removeClass('active')
+			$(this).addClass('active')
+			$('#kbinder').removeClass('hidden')
+			$('.map-header-text').addClass('k-active')
+			$('.map-header-text').removeClass('re-active')
+			$('.map-header-text').removeClass('r-active')
+			$('#recurrence').addClass('hidden')
+			$('#raasi').addClass('hidden')
+			$('.upper-text .kTitle').removeClass('hidden')
+			$('.upper-text .reTitle').addClass('hidden')
+			$('.upper-text .raTitle').addClass('hidden')
+			$('#step').addClass('detail-k')
+			$('#step').removeClass('detail-re')
+			$('#step').removeClass('detail-ra')
+		})
+		$('.line-purple').on('click', function(){
+			$('.bottom-nav div').removeClass('active')
+			$(this).addClass('active')
+			$('.map-header-text').addClass('re-active')
+			$('.map-header-text').removeClass('r-active')
+			$('.map-header-text').removeClass('k-active')
+			$('#recurrence').removeClass('hidden')
+			$('#raasi').addClass('hidden')
+			$('#kbinder').addClass('hidden')
+			$('.upper-text .kTitle').addClass('hidden')
+			$('.upper-text .reTitle').removeClass('hidden')
+			$('.upper-text .raTitle').addClass('hidden')
+			$('#step').removeClass('detail-k')
+			$('#step').addClass('detail-re')
+			$('#step').removeClass('detail-ra')
+		})
+		$('.line-dark-blue').on('click', function(){
+			$('.bottom-nav div').removeClass('active')
+			$(this).addClass('active')
+			$('.map-header-text').addClass('r-active')
+			$('.map-header-text').removeClass('re-active')
+			$('.map-header-text').removeClass('k-active')
+			$('#raasi').removeClass('hidden')
+			$('#recurrence').addClass('hidden')
+			$('#kbinder').addClass('hidden')
+			$('.upper-text .kTitle').addClass('hidden')
+			$('.upper-text .reTitle').addClass('hidden')
+			$('.upper-text .raTitle').removeClass('hidden')
+			$('#step').removeClass('detail-k')
+			$('#step').removeClass('detail-re')
+			$('#step').addClass('detail-ra')
+		})
+		//HOME BUTTON 
 		const reset = () =>{
-			if(!$('body').hasClass('')){
-				
+			if($("#step").hasClass('home-step')){
+
 			}
-			if(!$('#kbinder').hasClass('hidden')){
-				$('#kbinder').toggleClass('hidden')
-				$('.map-header-text').toggleClass('k-active')
+			else if($("#step").hasClass('state-select-step')){
+			 $('g.fade').removeClass('fade')
+			 $('g.active').removeClass('active-left')
+			 $('g.active').removeClass('active')
+			 $('.data-btns').toggleClass('hidden')
+			 $("#step").removeClass('state-select-step')
+			 $("#step").addClass('home-step')
+			}else {
+				if($("#step").hasClass('detail-k')){
+					$("#step").removeClass("detail-k")
+					$('#kbinder').toggleClass('hidden')
+					$('.map-header-text').removeClass('k-active')
+					$('.kTitle').toggleClass('hidden')
+				}
+				if($("#step").hasClass('detail-re')){
+					$("#step").removeClass("detail-re")
+					$('#recurrence').toggleClass('hidden')
+					$('.map-header-text').removeClass('re-active')
+					$('.reTitle').toggleClass('hidden')
+				}
+				if($("#step").hasClass('detail-ra')){
+					$("#step").removeClass("detail-ra")
+					$('#raasi').toggleClass('hidden')
+					$('.map-header-text').removeClass('r-active')
+					$('.raTitle').toggleClass('hidden')
+				}
+				$("#step").addClass('home-step')
+				$('.map-header-text').text('Select your state and local data topic')
+				$('.homeTitle').toggleClass('hidden')
+				$('g.active').toggleClass('active-left')
+				$('g.active').toggleClass('active')
+				$('g.fade').toggleClass('fade')
+				$('.bottom-nav').toggleClass('hidden')
 			}
-			if(!$('#recurrence').hasClass('hidden')){
-				$('#recurrence').toggleClass('hidden')
-				$('.map-header-text').toggleClass('re-active')
-			}
-			if(!$('#raasi').hasClass('hidden')){
-				$('#raasi').toggleClass('hidden')
-				$('.map-header-text').toggleClass('r-active')
-			}
-			$('g.fade').removeClass('fade')
-			$('g.active').removeClass('active-left')
-			$('g.active').removeClass('active')
-			$('.map-header-text').text('Select your state and local data topic')
 		}
       </script>
 </body>

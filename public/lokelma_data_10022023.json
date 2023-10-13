@@ -1,5 +1,5 @@
 {
-    "AK": {
+    "Alaska": {
         "state": "AK",
         "number_of_diagnosed_hk_patients": "487",
         "kbinder_utilization_recurrence": "8",
@@ -8,7 +8,7 @@
         "percent_overall_rassi_use": "43",
         "state_name": "Alaska"
     },
-    "AL": {
+    "Alabama": {
         "state": "AL",
         "number_of_diagnosed_hk_patients": "14386",
         "kbinder_utilization_recurrence": "12",
@@ -17,7 +17,7 @@
         "percent_overall_rassi_use": "45",
         "state_name": "Alabama"
     },
-    "AR": {
+    "Arkansas": {
         "state": "AR",
         "number_of_diagnosed_hk_patients": "6617",
         "kbinder_utilization_recurrence": "12",
@@ -26,7 +26,7 @@
         "percent_overall_rassi_use": "45",
         "state_name": "Arkansas"
     },
-    "AZ": {
+    "Arizona": {
         "state": "AZ",
         "number_of_diagnosed_hk_patients": "16679",
         "kbinder_utilization_recurrence": "10",
@@ -44,7 +44,7 @@
         "percent_overall_rassi_use": "39",
         "state_name": "California"
     },
-    "CO": {
+    "Colorado": {
         "state": "CO",
         "number_of_diagnosed_hk_patients": "7272",
         "kbinder_utilization_recurrence": "9",
@@ -53,7 +53,7 @@
         "percent_overall_rassi_use": "38",
         "state_name": "Colorado"
     },
-    "CT": {
+    "Connecticut": {
         "state": "CT",
         "number_of_diagnosed_hk_patients": "6701",
         "kbinder_utilization_recurrence": "14",
@@ -62,7 +62,7 @@
         "percent_overall_rassi_use": "43",
         "state_name": "Connecticut"
     },
-    "DC": {
+    "District_of_Columbia": {
         "state": "DC",
         "number_of_diagnosed_hk_patients": "1943",
         "kbinder_utilization_recurrence": "12",
@@ -71,7 +71,7 @@
         "percent_overall_rassi_use": "35",
         "state_name": "District of Columbia"
     },
-    "DE": {
+    "Delaware": {
         "state": "DE",
         "number_of_diagnosed_hk_patients": "5292",
         "kbinder_utilization_recurrence": "12",
@@ -80,7 +80,7 @@
         "percent_overall_rassi_use": "42",
         "state_name": "Delaware"
     },
-    "FL": {
+    "Florida": {
         "state": "FL",
         "number_of_diagnosed_hk_patients": "70285",
         "kbinder_utilization_recurrence": "10",
@@ -89,7 +89,7 @@
         "percent_overall_rassi_use": "42",
         "state_name": "Florida"
     },
-    "GA": {
+    "Georgia": {
         "state": "GA",
         "number_of_diagnosed_hk_patients": "34222",
         "kbinder_utilization_recurrence": "12",
@@ -98,7 +98,7 @@
         "percent_overall_rassi_use": "42",
         "state_name": "Georgia"
     },
-    "HI": {
+    "Hawaii": {
         "state": "HI",
         "number_of_diagnosed_hk_patients": "3473",
         "kbinder_utilization_recurrence": "15",
@@ -107,7 +107,7 @@
         "percent_overall_rassi_use": "47",
         "state_name": "Hawaii"
     },
-    "IA": {
+    "Iowa": {
         "state": "IA",
         "number_of_diagnosed_hk_patients": "4964",
         "kbinder_utilization_recurrence": "7",
@@ -116,7 +116,7 @@
         "percent_overall_rassi_use": "48",
         "state_name": "Iowa"
     },
-    "ID": {
+    "Idaho": {
         "state": "ID",
         "number_of_diagnosed_hk_patients": "1289",
         "kbinder_utilization_recurrence": "5",
@@ -125,7 +125,7 @@
         "percent_overall_rassi_use": "49",
         "state_name": "Idaho"
     },
-    "IL": {
+    "Illinois": {
         "state": "IL",
         "number_of_diagnosed_hk_patients": "25973",
         "kbinder_utilization_recurrence": "15",
@@ -134,7 +134,7 @@
         "percent_overall_rassi_use": "45",
         "state_name": "Illinois"
     },
-    "IN": {
+    "Indiana": {
         "state": "IN",
         "number_of_diagnosed_hk_patients": "16343",
         "kbinder_utilization_recurrence": "11",
@@ -143,7 +143,7 @@
         "percent_overall_rassi_use": "43",
         "state_name": "Indiana"
     },
-    "KS": {
+    "Kansas": {
         "state": "KS",
         "number_of_diagnosed_hk_patients": "5192",
         "kbinder_utilization_recurrence": "7",
@@ -152,7 +152,7 @@
         "percent_overall_rassi_use": "43",
         "state_name": "Kansas"
     },
-    "KY": {
+    "Kentucky": {
         "state": "KY",
         "number_of_diagnosed_hk_patients": "15494",
         "kbinder_utilization_recurrence": "11",
@@ -161,7 +161,7 @@
         "percent_overall_rassi_use": "47",
         "state_name": "Kentucky"
     },
-    "LA": {
+    "Lousiana": {
         "state": "LA",
         "number_of_diagnosed_hk_patients": "17971",
         "kbinder_utilization_recurrence": "13",
@@ -170,7 +170,7 @@
         "percent_overall_rassi_use": "44",
         "state_name": "Louisiana"
     },
-    "MA": {
+    "Massachusetts_3_": {
         "state": "MA",
         "number_of_diagnosed_hk_patients": "10593",
         "kbinder_utilization_recurrence": "17",
@@ -179,7 +179,7 @@
         "percent_overall_rassi_use": "43",
         "state_name": "Massachusetts"
     },
-    "MD": {
+    "Maryland": {
         "state": "MD",
         "number_of_diagnosed_hk_patients": "16191",
         "kbinder_utilization_recurrence": "12",
@@ -188,7 +188,7 @@
         "percent_overall_rassi_use": "39",
         "state_name": "Maryland"
     },
-    "ME": {
+    "Maine_3_": {
         "state": "ME",
         "number_of_diagnosed_hk_patients": "2470",
         "kbinder_utilization_recurrence": "9",
@@ -197,7 +197,7 @@
         "percent_overall_rassi_use": "45",
         "state_name": "Maine"
     },
-    "MI": {
+    "Michigan_3_": {
         "state": "MI",
         "number_of_diagnosed_hk_patients": "29778",
         "kbinder_utilization_recurrence": "12",
@@ -206,7 +206,7 @@
         "percent_overall_rassi_use": "45",
         "state_name": "Michigan"
     },
-    "MN": {
+    "Minnesota": {
         "state": "MN",
         "number_of_diagnosed_hk_patients": "7599",
         "kbinder_utilization_recurrence": "7",
@@ -215,7 +215,7 @@
         "percent_overall_rassi_use": "42",
         "state_name": "Minnesota"
     },
-    "MO": {
+    "Missouri": {
         "state": "MO",
         "number_of_diagnosed_hk_patients": "10065",
         "kbinder_utilization_recurrence": "11",
@@ -224,7 +224,7 @@
         "percent_overall_rassi_use": "45",
         "state_name": "Missouri"
     },
-    "MS": {
+    "Mississippi": {
         "state": "MS",
         "number_of_diagnosed_hk_patients": "6222",
         "kbinder_utilization_recurrence": "12",
@@ -233,7 +233,7 @@
         "percent_overall_rassi_use": "45",
         "state_name": "Mississippi"
     },
-    "MT": {
+    "Montana": {
         "state": "MT",
         "number_of_diagnosed_hk_patients": "1296",
         "kbinder_utilization_recurrence": "7",
@@ -242,7 +242,7 @@
         "percent_overall_rassi_use": "49",
         "state_name": "Montana"
     },
-    "NC": {
+    "North_Carolina": {
         "state": "NC",
         "number_of_diagnosed_hk_patients": "21256",
         "kbinder_utilization_recurrence": "13",
@@ -251,7 +251,7 @@
         "percent_overall_rassi_use": "41",
         "state_name": "North Carolina"
     },
-    "ND": {
+    "North_Dakota": {
         "state": "ND",
         "number_of_diagnosed_hk_patients": "994",
         "kbinder_utilization_recurrence": "9",
@@ -260,7 +260,7 @@
         "percent_overall_rassi_use": "44",
         "state_name": "North Dakota"
     },
-    "NE": {
+    "Nebraska": {
         "state": "NE",
         "number_of_diagnosed_hk_patients": "2723",
         "kbinder_utilization_recurrence": "14",
@@ -269,7 +269,7 @@
         "percent_overall_rassi_use": "48",
         "state_name": "Nebraska"
     },
-    "NH": {
+    "New_Hampshire_1_": {
         "state": "NH",
         "number_of_diagnosed_hk_patients": "1592",
         "kbinder_utilization_recurrence": "8",
@@ -278,7 +278,7 @@
         "percent_overall_rassi_use": "44",
         "state_name": "New Hampshire"
     },
-    "NJ": {
+    "New_Jersey": {
         "state": "NJ",
         "number_of_diagnosed_hk_patients": "29516",
         "kbinder_utilization_recurrence": "15",
@@ -287,7 +287,7 @@
         "percent_overall_rassi_use": "38",
         "state_name": "New Jersey"
     },
-    "NM": {
+    "New_Mexico_1_": {
         "state": "NM",
         "number_of_diagnosed_hk_patients": "3690",
         "kbinder_utilization_recurrence": "12",
@@ -296,7 +296,7 @@
         "percent_overall_rassi_use": "45",
         "state_name": "New Mexico"
     },
-    "NV": {
+    "Nevada": {
         "state": "NV",
         "number_of_diagnosed_hk_patients": "8818",
         "kbinder_utilization_recurrence": "9",
@@ -305,7 +305,7 @@
         "percent_overall_rassi_use": "41",
         "state_name": "Nevada"
     },
-    "NY": {
+    "New_York": {
         "state": "NY",
         "number_of_diagnosed_hk_patients": "46980",
         "kbinder_utilization_recurrence": "16",
@@ -314,7 +314,7 @@
         "percent_overall_rassi_use": "35",
         "state_name": "New York"
     },
-    "OH": {
+    "Ohio": {
         "state": "OH",
         "number_of_diagnosed_hk_patients": "36297",
         "kbinder_utilization_recurrence": "13",
@@ -323,7 +323,7 @@
         "percent_overall_rassi_use": "45",
         "state_name": "Ohio"
     },
-    "OK": {
+    "Oklahoma": {
         "state": "OK",
         "number_of_diagnosed_hk_patients": "8467",
         "kbinder_utilization_recurrence": "8",
@@ -332,7 +332,7 @@
         "percent_overall_rassi_use": "36",
         "state_name": "Oklahoma"
     },
-    "OR": {
+    "Oregon": {
         "state": "OR",
         "number_of_diagnosed_hk_patients": "5974",
         "kbinder_utilization_recurrence": "10",
@@ -341,7 +341,7 @@
         "percent_overall_rassi_use": "43",
         "state_name": "Oregon"
     },
-    "PA": {
+    "Pennsylvania": {
         "state": "PA",
         "number_of_diagnosed_hk_patients": "26156",
         "kbinder_utilization_recurrence": "11",
@@ -350,7 +350,7 @@
         "percent_overall_rassi_use": "43",
         "state_name": "Pennsylvania"
     },
-    "PR": {
+    "Puerto_Rico": {
         "state": "PR",
         "number_of_diagnosed_hk_patients": "727",
         "kbinder_utilization_recurrence": "9",
@@ -359,7 +359,7 @@
         "percent_overall_rassi_use": "32",
         "state_name": "Puerto Rico"
     },
-    "RI": {
+    "Rhode_Island": {
         "state": "RI",
         "number_of_diagnosed_hk_patients": "2033",
         "kbinder_utilization_recurrence": "9",
@@ -368,7 +368,7 @@
         "percent_overall_rassi_use": "47",
         "state_name": "Rhode Island"
     },
-    "SC": {
+    "South_Carolina": {
         "state": "SC",
         "number_of_diagnosed_hk_patients": "13873",
         "kbinder_utilization_recurrence": "10",
@@ -377,7 +377,7 @@
         "percent_overall_rassi_use": "43",
         "state_name": "South Carolina"
     },
-    "SD": {
+    "South_Dakota_1_": {
         "state": "SD",
         "number_of_diagnosed_hk_patients": "1231",
         "kbinder_utilization_recurrence": "15",
@@ -386,7 +386,7 @@
         "percent_overall_rassi_use": "40",
         "state_name": "South Dakota"
     },
-    "TN": {
+    "Tennessee": {
         "state": "TN",
         "number_of_diagnosed_hk_patients": "22227",
         "kbinder_utilization_recurrence": "11",
@@ -395,7 +395,7 @@
         "percent_overall_rassi_use": "47",
         "state_name": "Tennessee"
     },
-    "TX": {
+    "Texas": {
         "state": "TX",
         "number_of_diagnosed_hk_patients": "67109",
         "kbinder_utilization_recurrence": "11",
@@ -404,7 +404,7 @@
         "percent_overall_rassi_use": "41",
         "state_name": "Texas"
     },
-    "UT": {
+    "Utah": {
         "state": "UT",
         "number_of_diagnosed_hk_patients": "4446",
         "kbinder_utilization_recurrence": "9",
@@ -413,7 +413,7 @@
         "percent_overall_rassi_use": "49",
         "state_name": "Utah"
     },
-    "VA": {
+    "Virginia": {
         "state": "VA",
         "number_of_diagnosed_hk_patients": "16950",
         "kbinder_utilization_recurrence": "10",
@@ -422,7 +422,7 @@
         "percent_overall_rassi_use": "39",
         "state_name": "Virginia"
     },
-    "VI": {
+    "Virgin_Islands": {
         "state": "VI",
         "number_of_diagnosed_hk_patients": "11",
         "kbinder_utilization_recurrence": "0",
@@ -431,7 +431,7 @@
         "percent_overall_rassi_use": "36",
         "state_name": "Virgin Islands"
     },
-    "VT": {
+    "Vermont": {
         "state": "VT",
         "number_of_diagnosed_hk_patients": "527",
         "kbinder_utilization_recurrence": "2",
@@ -440,7 +440,7 @@
         "percent_overall_rassi_use": "46",
         "state_name": "Vermont"
     },
-    "WA": {
+    "Washington": {
         "state": "WA",
         "number_of_diagnosed_hk_patients": "9983",
         "kbinder_utilization_recurrence": "9",
@@ -449,7 +449,7 @@
         "percent_overall_rassi_use": "44",
         "state_name": "Washington"
     },
-    "WI": {
+    "Wisconsin": {
         "state": "WI",
         "number_of_diagnosed_hk_patients": "8084",
         "kbinder_utilization_recurrence": "10",
@@ -458,7 +458,7 @@
         "percent_overall_rassi_use": "43",
         "state_name": "Wisconsin"
     },
-    "WV": {
+    "West_Virginia": {
         "state": "WV",
         "number_of_diagnosed_hk_patients": "4736",
         "kbinder_utilization_recurrence": "12",
@@ -467,7 +467,7 @@
         "percent_overall_rassi_use": "47",
         "state_name": "West Virginia"
     },
-    "WY": {
+    "Wyoming": {
         "state": "WY",
         "number_of_diagnosed_hk_patients": "585",
         "kbinder_utilization_recurrence": "6",
