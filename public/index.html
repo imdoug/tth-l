@@ -271,12 +271,12 @@
 			position: absolute;
 			top: 76px;
 			font-size: 65px;
-			left: 500px;
+			right: -700px;
 		}
 		p.onlynum {
 			position: absolute;
 			top: 288px;
-			z-index: 99;
+			z-index: 5;
 			font-size: 67px;
 			left: 770px;
 			color: #D6006D;
@@ -317,24 +317,41 @@
 			top: 231px;
 			width: 391px;
 			left: 538px;
+			z-index:-1;
 		}
 		img.center {
 			position: absolute;
 			top: 231px;
 			width: 391px;
 			left: 978px;
+			z-index:-1;
 		}
 		img.right {
 			position: absolute;
 			top: 231px;
 			width: 391px;
 			left: 1416px;
+			z-index:-1;;
 		}
 		img.b-btn-k {
 			width: 392px;
 			position: absolute;
 			bottom: 16px;
 			left: 975px;
+			z-index:-1;
+		}
+		#recurrence,  #raasi, #kbinder {
+			opacity:0;
+			visibility: hidden; 
+			position: absolute;
+			top: 0;
+			left: 0px;
+			z-index: -1;
+		}
+		#recurrence.fadeIn, #raasi.fadeIn , #kbinder.fadeIn{
+			visibility: visible!important;
+			opacity: 1!important;
+			transition: opacity 3.5s linear;
 		}
 		#kbinder h2, #raasi h2, #recurrence h2{
 			position: absolute;
@@ -342,6 +359,8 @@
 			font-size: 59px;
 			left: 717px;
 			font-family: 'Helvetica';
+			width: 820px;
+
 		}
 		h2 span.bold {
 			font-weight: 900!important;
@@ -374,7 +393,7 @@
 		p.state-n {
 			position: absolute;
 			top: 362px;
-			right: 1062px;
+			right: -802px;
 			z-index: 5;
 			font-size: 35px;
 			font-family: 'Avenir Bd';
@@ -420,6 +439,8 @@
 			animation-name: CAleft;
 			animation-duration: 2s;
 			animation-fill-mode: forwards;
+			position: absolute;
+			z-index: 5;
 		}
 		@keyframes CAleft {
 			0% {
@@ -430,6 +451,844 @@
 				transform: translate(-497px, -28%);
 			}
 		}
+		#Alaska.active-left {
+			visibility: initial;
+			opacity: 1;
+			animation-name: AKleft;
+			animation-duration: 2s;
+			animation-fill-mode: forwards;
+		}
+		#Alaska g{
+			opacity: 1!important;
+    			visibility: visible!important
+		}
+		@keyframes AKleft {
+			0% {
+				scale: 1;
+			}
+			100% {
+				scale: 1.5;
+    				transform: translate(-191px, -2%);
+			}
+		}
+		#Hawaii.active-left {
+			visibility: initial;
+			opacity: 1;
+			animation-name: HIleft;
+			animation-duration: 2s;
+			animation-fill-mode: forwards;
+		}
+		#Hawaii g{
+			opacity: 1!important;
+    			visibility: visible!important
+		}
+		@keyframes HIleft {
+			0% {
+				scale: 1;
+			}
+			100% {
+				scale: 1.5;
+    				transform: translate(-206px, -26%);
+			}
+		}
+		#Washington.active-left {
+			visibility: initial;
+			opacity: 1;
+			animation-name: WAleft;
+			animation-duration: 2s;
+			animation-fill-mode: forwards;
+		}
+		@keyframes WAleft {
+			0% {
+				scale: 1;
+			}
+			100% {
+				scale: 2;
+    				transform: translate(-530px, -10%);
+			}
+		}
+		#Oregon.active-left {
+			visibility: initial;
+			opacity: 1;
+			animation-name: ORleft;
+			animation-duration: 2s;
+			animation-fill-mode: forwards;
+		}
+		@keyframes ORleft {
+			0% {
+				scale: 1;
+			}
+			100% {
+				scale: 2;
+    				transform: translate(-512px, -16%);
+			}
+		}
+		#Nevada.active-left {
+			visibility: initial;
+			opacity: 1;
+			animation-name: NVleft;
+			animation-duration: 2s;
+			animation-fill-mode: forwards;
+		}
+		@keyframes NVleft {
+			0% {
+				scale: 1;
+			}
+			100% {
+				scale: 2;
+    				transform: translate(-550px, -26%);
+			}
+		}
+		#Idaho.active-left {
+			visibility: initial;
+			opacity: 1;
+			animation-name: IDleft;
+			animation-duration: 2s;
+			animation-fill-mode: forwards;
+		}
+		@keyframes IDleft {
+			0% {
+				scale: 1;
+			}
+			100% {
+				scale: 2;
+    				transform: translate(-600px, -15%);
+			}
+		}
+		#Utah.active-left {
+			visibility: initial;
+			opacity: 1;
+			animation-name: UTleft;
+			animation-duration: 2s;
+			animation-fill-mode: forwards;
+		}
+		@keyframes UTleft {
+			0% {
+				scale: 1;
+			}
+			100% {
+				scale: 2;
+    				transform: translate(-630px, -26%);
+			}
+		}
+		#Arizona.active-left {
+			visibility: initial;
+			opacity: 1;
+			animation-name: AZleft;
+			animation-duration: 2s;
+			animation-fill-mode: forwards;
+		}
+		@keyframes AZleft {
+			0% {
+				scale: 1;
+			}
+			100% {
+				scale: 2;
+    				transform: translate(-610px, -37%);
+			}
+		}
+		#Montana.active-left {
+			visibility: initial;
+			opacity: 1;
+			animation-name: MTleft;
+			animation-duration: 2s;
+			animation-fill-mode: forwards;
+		}
+		@keyframes MTleft {
+			0% {
+				scale: 1;
+			}
+			100% {
+				scale: 1.8;
+    				transform: translate(-670px, -10%);
+			}
+		}
+		#Wyoming.active-left {
+			visibility: initial;
+			opacity: 1;
+			animation-name: WYleft;
+			animation-duration: 2s;
+			animation-fill-mode: forwards;
+		}
+		@keyframes WYleft {
+			0% {
+				scale: 1;
+			}
+			100% {
+				scale: 2;
+    				transform: translate(-700px, -21%);
+			}
+		}
+		#Colorado.active-left {
+			visibility: initial;
+			opacity: 1;
+			animation-name: COleft;
+			animation-duration: 2s;
+			animation-fill-mode: forwards;
+		}
+		@keyframes COleft {
+			0% {
+				scale: 1;
+			}
+			100% {
+				scale: 2;
+    				transform: translate(-730px, -29%);
+			}
+		}
+		#New_Mexico_1_.active-left {
+			visibility: initial;
+			opacity: 1;
+			animation-name: NMleft;
+			animation-duration: 2s;
+			animation-fill-mode: forwards;
+		}
+		@keyframes NMleft {
+			0% {
+				scale: 1;
+			}
+			100% {
+				scale: 2;
+				transform: translate(-710px, -38%);
+			}
+		}
+		#North_Dakota.active-left {
+			visibility: initial;
+			opacity: 1;
+			animation-name: NDleft;
+			animation-duration: 2s;
+			animation-fill-mode: forwards;
+		}
+		@keyframes NDleft {
+			0% {
+				scale: 1;
+			}
+			100% {
+				scale: 2;
+				transform: translate(-820px, -14%);
+			}
+		}
+		#South_Dakota_1_.active-left {
+			visibility: initial;
+			opacity: 1;
+			animation-name: SDleft;
+			animation-duration: 2s;
+			animation-fill-mode: forwards;
+		}
+		@keyframes SDleft {
+			0% {
+				scale: 1;
+			}
+			100% {
+				scale: 2;
+				transform: translate(-820px, -19%);
+			}
+		}
+		#Nebraska.active-left {
+			visibility: initial;
+			opacity: 1;
+			animation-name: NEleft;
+			animation-duration: 2s;
+			animation-fill-mode: forwards;
+		}
+		@keyframes NEleft {
+			0% {
+				scale: 1;
+			}
+			100% {
+				scale: 2;
+				transform: translate(-830px, -25%);
+			}
+		}
+		#Kansas.active-left {
+			visibility: initial;
+			opacity: 1;
+			animation-name: KSleft;
+			animation-duration: 2s;
+			animation-fill-mode: forwards;
+		}
+		@keyframes KSleft {
+			0% {
+				scale: 1;
+			}
+			100% {
+				scale: 2;
+				transform: translate(-850px, -31%);
+			}
+		}
+		#Oklahoma.active-left {
+			visibility: initial;
+			opacity: 1;
+			animation-name: OKleft;
+			animation-duration: 2s;
+			animation-fill-mode: forwards;
+		}
+		@keyframes OKleft {
+			0% {
+				scale: 1;
+			}
+			100% {
+				scale: 2;
+				transform: translate(-850px, -37%);
+			}
+		}
+		#Texas.active-left {
+			visibility: initial;
+			opacity: 1;
+			animation-name: TXleft;
+			animation-duration: 2s;
+			animation-fill-mode: forwards;
+		}
+		@keyframes TXleft {
+			0% {
+				scale: 1;
+			}
+			100% {
+				scale: 1.5;
+    				transform: translate(-765px, -34%);
+			}
+		}
+		#Minnesota.active-left {
+			visibility: initial;
+			opacity: 1;
+			animation-name: MNleft;
+			animation-duration: 2s;
+			animation-fill-mode: forwards;
+		}
+		@keyframes MNleft {
+			0% {
+				scale: 1;
+			}
+			100% {
+				scale: 2;
+    				transform: translate(-915px, -15%);
+			}
+		}
+		#Iowa.active-left {
+			visibility: initial;
+			opacity: 1;
+			animation-name: IAleft;
+			animation-duration: 2s;
+			animation-fill-mode: forwards;
+		}
+		@keyframes IAleft {
+			0% {
+				scale: 1;
+			}
+			100% {
+				scale: 2;
+    				transform: translate(-925px, -24%);
+			}
+		}
+		#Missouri.active-left {
+			visibility: initial;
+			opacity: 1;
+			animation-name: MOleft;
+			animation-duration: 2s;
+			animation-fill-mode: forwards;
+		}
+		@keyframes MOleft {
+			0% {
+				scale: 1;
+			}
+			100% {
+				scale: 2;
+    				transform: translate(-950px, -32%);
+			}
+		}
+		#Arkansas.active-left {
+			visibility: initial;
+			opacity: 1;
+			animation-name: ARleft;
+			animation-duration: 2s;
+			animation-fill-mode: forwards;
+		}
+		@keyframes ARleft {
+			0% {
+				scale: 1;
+			}
+			100% {
+				scale: 2;
+    				transform: translate(-950px, -38%);
+			}
+		}
+		#Lousiana.active-left {
+			visibility: initial;
+			opacity: 1;
+			animation-name: LAleft;
+			animation-duration: 2s;
+			animation-fill-mode: forwards;
+		}
+		@keyframes LAleft {
+			0% {
+				scale: 1;
+			}
+			100% {
+				scale: 2;
+    				transform: translate(-965px, -45%);
+			}
+		}
+		#Wisconsin.active-left {
+			visibility: initial;
+			opacity: 1;
+			animation-name: WIleft;
+			animation-duration: 2s;
+			animation-fill-mode: forwards;
+		}
+		@keyframes WIleft {
+			0% {
+				scale: 1;
+			}
+			100% {
+				scale: 2.5;
+    				transform: translate(-1010px, -25%);
+			}
+		}
+		#Illinois.active-left {
+			visibility: initial;
+			opacity: 1;
+			animation-name: ILleft;
+			animation-duration: 2s;
+			animation-fill-mode: forwards;
+		}
+		#Illinois g{
+			opacity: 1!important;
+    			visibility: visible!important
+		}
+		@keyframes ILleft {
+			0% {
+				scale: 1;
+			}
+			100% {
+				scale: 2.5;
+    				transform: translate(-1020px, -34%);
+			}
+		}
+		#Michigan_3_.active-left {
+			visibility: initial;
+			opacity: 1;
+			animation-name: MIleft;
+			animation-duration: 2s;
+			animation-fill-mode: forwards;
+		}
+		#Michigan_3_ g{
+			opacity: 1!important;
+    			visibility: visible!important
+		}
+		@keyframes MIleft {
+			0% {
+				scale: 1;
+			}
+			100% {
+				scale: 2;
+    				transform: translate(-1050px, -19%);
+			}
+		}
+		#Indiana.active-left {
+			visibility: initial;
+			opacity: 1;
+			animation-name: INleft;
+			animation-duration: 2s;
+			animation-fill-mode: forwards;
+		}
+		@keyframes INleft {
+			0% {
+				scale: 1;
+			}
+			100% {
+				scale: 3;
+    				transform: translate(-1090px, -38%);
+			}
+		}
+		#Ohio.active-left {
+			visibility: initial;
+			opacity: 1;
+			animation-name: OHleft;
+			animation-duration: 2s;
+			animation-fill-mode: forwards;
+		}
+		@keyframes OHleft {
+			0% {
+				scale: 1;
+			}
+			100% {
+				scale: 3;
+    				transform: translate(-1150px, -37%);
+			}
+		}
+		#Kentucky.active-left {
+			visibility: initial;
+			opacity: 1;
+			animation-name: KYleft;
+			animation-duration: 2s;
+			animation-fill-mode: forwards;
+		}
+		@keyframes KYleft {
+			0% {
+				scale: 1;
+			}
+			100% {
+				scale: 2.5;
+    				transform: translate(-1090px, -39%);
+			}
+		}
+		#Tennessee.active-left {
+			visibility: initial;
+			opacity: 1;
+			animation-name: TNleft;
+			animation-duration: 2s;
+			animation-fill-mode: forwards;
+		}
+		@keyframes TNleft {
+			0% {
+				scale: 1;
+			}
+			100% {
+				scale: 2.5;
+    				transform: translate(-1085px, -42%);
+			}
+		}
+		#Mississippi.active-left {
+			visibility: initial;
+			opacity: 1;
+			animation-name: MSleft;
+			animation-duration: 2s;
+			animation-fill-mode: forwards;
+		}
+		@keyframes MSleft {
+			0% {
+				scale: 1;
+			}
+			100% {
+				scale: 2.5;
+    				transform: translate(-1025px, -49%);
+			}
+		}
+		#Alabama.active-left {
+			visibility: initial;
+			opacity: 1;
+			animation-name: ALleft;
+			animation-duration: 2s;
+			animation-fill-mode: forwards;
+		}
+		@keyframes ALleft {
+			0% {
+				scale: 1;
+			}
+			100% {
+				scale: 2.5;
+    				transform: translate(-1082px, -48%);
+			}
+		}
+		#Florida.active-left {
+			visibility: initial;
+			opacity: 1;
+			animation-name: FLleft;
+			animation-duration: 2s;
+			animation-fill-mode: forwards;
+		}
+		@keyframes FLleft {
+			0% {
+				scale: 1;
+			}
+			100% {
+				scale: 2;
+    				transform: translate(-1130px, -48%);
+			}
+		}
+		#Georgia.active-left {
+			visibility: initial;
+			opacity: 1;
+			animation-name: GAleft;
+			animation-duration: 2s;
+			animation-fill-mode: forwards;
+		}
+		@keyframes GAleft {
+			0% {
+				scale: 1;
+			}
+			100% {
+				scale: 2.5;
+    				transform: translate(-1140px, -48%);
+			}
+		}
+		#South_Carolina.active-left {
+			visibility: initial;
+			opacity: 1;
+			animation-name: SCleft;
+			animation-duration: 2s;
+			animation-fill-mode: forwards;
+		}
+		@keyframes SCleft {
+			0% {
+				scale: 1;
+			}
+			100% {
+				scale: 2.5;
+    				transform: translate(-1180px, -46%);
+			}
+		}
+		#North_Carolina.active-left {
+			visibility: initial;
+			opacity: 1;
+			animation-name: NCleft;
+			animation-duration: 2s;
+			animation-fill-mode: forwards;
+		}
+		@keyframes NCleft {
+			0% {
+				scale: 1;
+			}
+			100% {
+				scale: 2;
+    				transform: translate(-1160px, -35%);
+			}
+		}
+		#Virginia.active-left {
+			visibility: initial;
+			opacity: 1;
+			animation-name: VAleft;
+			animation-duration: 2s;
+			animation-fill-mode: forwards;
+		}
+		#Virginia g {
+			opacity: 1!important;
+    			visibility: visible!important
+		}
+		@keyframes VAleft {
+			0% {
+				scale: 1;
+			}
+			100% {
+				scale: 2.3;
+    				transform: translate(-1185px, -35%);
+			}
+		}
+		#West_Virginia.active-left {
+			visibility: initial;
+			opacity: 1;
+			animation-name: WVleft;
+			animation-duration: 2s;
+			animation-fill-mode: forwards;
+		}
+		@keyframes WVleft {
+			0% {
+				scale: 1;
+			}
+			100% {
+				scale: 3;
+    				transform: translate(-1190px, -40%);
+			}
+		}
+		#Delaware.active-left {
+			visibility: initial;
+			opacity: 1;
+			animation-name: DEleft;
+			animation-duration: 2s;
+			animation-fill-mode: forwards;
+		}
+		@keyframes DEleft {
+			0% {
+				scale: 1;
+			}
+			100% {
+				scale: 3;
+    				transform: translate(-1240px, -39%);
+			}
+		}
+		#District_of_Columbia.active-left {
+			visibility: initial;
+			opacity: 1;
+			animation-name: DCleft;
+			animation-duration: 2s;
+			animation-fill-mode: forwards;
+		}
+		@keyframes DCleft {
+			0% {
+				scale: 1;
+			}
+			100% {
+				scale: 3;
+    				transform: translate(-1190px, -40%);
+			}
+		}
+		#Maryland.active-left {
+			visibility: initial;
+			opacity: 1;
+			animation-name: MDleft;
+			animation-duration: 2s;
+			animation-fill-mode: forwards;
+		}
+		@keyframes MDleft {
+			0% {
+				scale: 1;
+			}
+			100% {
+				scale: 4;
+    				transform: translate(-1305px, -43%);
+			}
+		}
+		#New_Jersey.active-left {
+			visibility: initial;
+			opacity: 1;
+			animation-name: NJleft;
+			animation-duration: 2s;
+			animation-fill-mode: forwards;
+		}
+		@keyframes NJleft {
+			0% {
+				scale: 1;
+			}
+			100% {
+				scale: 3;
+    				transform: translate(-1285px, -35%);
+			}
+		}
+		#New_York.active-left {
+			visibility: initial;
+			opacity: 1;
+			animation-name: NYleft;
+			animation-duration: 2s;
+			animation-fill-mode: forwards;
+		}
+		#New_York g {
+			opacity: 1!important;
+    			visibility: visible!important
+		}
+		@keyframes NYleft {
+			0% {
+				scale: 1;
+			}
+			100% {
+				scale: 2.5;
+    				transform: translate(-1235px, -26%);
+			}
+		}
+		#Massachusetts_3_.active-left {
+			visibility: initial;
+			opacity: 1;
+			animation-name: MAleft;
+			animation-duration: 2s;
+			animation-fill-mode: forwards;
+		}
+		#Massachusetts_3_ g {
+			opacity: 1!important;
+    			visibility: visible!important
+		}
+		@keyframes MAleft {
+			0% {
+				scale: 1;
+			}
+			100% {
+				scale: 4;
+   				transform: translate(-1341px, -35%);
+			}
+		}
+		#Rhode_Island.active-left {
+			visibility: initial;
+			opacity: 1;
+			animation-name: RIleft;
+			animation-duration: 2s;
+			animation-fill-mode: forwards;
+		}
+		#Rhode_Island g {
+			opacity: 1!important;
+    			visibility: visible!important
+		}
+		@keyframes RIleft {
+			0% {
+				scale: 1;
+			}
+			100% {
+				scale: 4;
+    				transform: translate(-1350px, -37%);
+			}
+		}
+		#Connecticut.active-left {
+			visibility: initial;
+			opacity: 1;
+			animation-name: CTleft;
+			animation-duration: 2s;
+			animation-fill-mode: forwards;
+		}
+		@keyframes CTleft {
+			0% {
+				scale: 1;
+			}
+			100% {
+				scale: 4;
+    				transform: translate(-1326px, -37%);
+			}
+		}
+		#Pennsylvania.active-left {
+			visibility: initial;
+			opacity: 1;
+			animation-name: PAleft;
+			animation-duration: 2s;
+			animation-fill-mode: forwards;
+		}
+		@keyframes PAleft {
+			0% {
+				scale: 1;
+			}
+			100% {
+				scale: 2.5;
+    				transform: translate(-1210px, -30%);
+			}
+		}
+
+		#New_Hampshire_1_.active-left {
+			visibility: initial;
+			opacity: 1;
+			animation-name: NHleft;
+			animation-duration: 2s;
+			animation-fill-mode: forwards;
+		}
+		@keyframes NHleft {
+			0% {
+				scale: 1;
+			}
+			100% {
+				scale: 4;
+    				transform: translate(-1338px, -32%);
+			}
+		}
+		#Vermont.active-left {
+			visibility: initial;
+			opacity: 1;
+			animation-name: VTleft;
+			animation-duration: 2s;
+			animation-fill-mode: forwards;
+		}
+		@keyframes VTleft {
+			0% {
+				scale: 1;
+			}
+			100% {
+				scale: 4;
+    				transform: translate(-1319px, -32%);
+			}
+		}
+		#Maine_3_.active-left {
+			visibility: initial;
+			opacity: 1;
+			animation-name: MEleft;
+			animation-duration: 2s;
+			animation-fill-mode: forwards;
+		}
+		#Maine_3_ g {
+			opacity: 1!important;
+    			visibility: visible!important
+		}
+		@keyframes MEleft {
+			0% {
+				scale: 1;
+			}
+			100% {
+				scale: 3;
+    				transform: translate(-1344px, -23%);
+			}
+		}
+
 		
       </style>
 </head>
@@ -11890,13 +12749,14 @@ R1HG0fBTAkIB5xm6itpPQCZAfFoOVhVxCzsO+hPIp3Hw2gm0gH7cKmo+IgCHBhfWRAClMHDdq6gx
 hK2iJhPzXNK04Z9RHms0XCDjERq2oRwSyoraB0MRsV2suIlQakXNCarxIeBMSE2Bccxva+jtFQ==
 	]]>
 </i:aipgf>
+<use xlink:href="#New_York" ></use>
 </svg>
 <div class="hidden data-btns" onclick="hide(this)">
       <img class="kbinder" src="./assets/BUTTON_K+_Binder_Utilization.png" alt="K-Binder" />
       <img class="recurrence" src="./assets/button_HK_recurrence.png" alt="Recurrence" />
       <img class="raasi" src="./assets/button_overall_RAASi_use.png" alt="RAASi" />
 </div>
-<div id="kbinder" class="hidden">
+<div id="kbinder" >
 	<h2>patients diagnosed with <span class="bold">HK</span></h2>
 	<p class="pnum"></p>
 	<p class="onlynum"></p>
@@ -11905,7 +12765,7 @@ hK2iJhPzXNK04Z9RHms0XCDjERq2oRwSyoraB0MRsV2suIlQakXNCarxIeBMSE2Bccxva+jtFQ==
 	<img class="right"src="./assets/card_K+_binder_right.png"/>
 	<img class="b-btn-k"  onclick="showPopUp('#kguideline')" src="./assets/button_KDIGO_Guideline_Update.png" />
 </div>
-<div id="recurrence" class="hidden">
+<div id="recurrence">
 	<h2>patients diagnosed with <span class="bold">HK</span></h2>
 	<p class="pnum"></p>
 	<p class="precurrence"></p>
@@ -11914,7 +12774,7 @@ hK2iJhPzXNK04Z9RHms0XCDjERq2oRwSyoraB0MRsV2suIlQakXNCarxIeBMSE2Bccxva+jtFQ==
 	<img class="center" src="./assets/card_recurrence_center.png"/>
 	<img class="right"src="./assets/card_recurrence_right.png"/>
 </div>
-<div id="raasi" class="hidden">
+<div id="raasi" >
 	<p class="pnum"></p>
 	<h2>patients diagnosed with <span class="bold">HK</span></h2>
 	<p class="opt-bf"></p>
@@ -12027,10 +12887,9 @@ hK2iJhPzXNK04Z9RHms0XCDjERq2oRwSyoraB0MRsV2suIlQakXNCarxIeBMSE2Bccxva+jtFQ==
 			console.log($(this))
 			let mid = $('g.active').attr('id')
 			let stateData = json[mid];
-			
+			$('#kbinder').toggleClass('fadeIn')
 			$('g.active').toggleClass('active-left')
 			$('.data-btns').toggleClass('hidden')
-			$('#kbinder').toggleClass('hidden')
 			$('.map-header-text').text(`${stateData.state_name}`)
 			$('.map-header-text').addClass('k-active')
 			$('.kTitle').toggleClass('hidden')
@@ -12048,6 +12907,7 @@ hK2iJhPzXNK04Z9RHms0XCDjERq2oRwSyoraB0MRsV2suIlQakXNCarxIeBMSE2Bccxva+jtFQ==
 			$('.opt-bf').html(`${stateData.percent_rassi_optimization_before_hk}<span>%</span>`)
 			$('.o-use').html(`${stateData.percent_overall_rassi_use}<span>%</span>`)
 
+			$('svg use').attr("xlink:href", `#${mid}`)
 			$("g#INDIVIDUAL_STATES_Full_Map_Master g").each(function () {
 				if ($(this).attr("id") !== mid) {
 					$(this).addClass("fade");
@@ -12064,7 +12924,7 @@ hK2iJhPzXNK04Z9RHms0XCDjERq2oRwSyoraB0MRsV2suIlQakXNCarxIeBMSE2Bccxva+jtFQ==
 
 			$('g.active').toggleClass('active-left')
 			$('.data-btns').toggleClass('hidden')
-			$('#recurrence').toggleClass('hidden')
+			$('#recurrence').toggleClass('fadeIn')
 			$('.map-header-text').text(`${stateData.state_name}`)
 			$('.map-header-text').addClass('re-active')
 			$('.reTitle').toggleClass('hidden')
@@ -12081,6 +12941,7 @@ hK2iJhPzXNK04Z9RHms0XCDjERq2oRwSyoraB0MRsV2suIlQakXNCarxIeBMSE2Bccxva+jtFQ==
 			$('.opt-bf').html(`${stateData.percent_rassi_optimization_before_hk}<span>%</span>`)
 			$('.o-use').html(`${stateData.percent_overall_rassi_use}<span>%</span>`)
 
+			$('svg use').attr("xlink:href", `#${mid}`)
 			$("g#INDIVIDUAL_STATES_Full_Map_Master g").each(function () {
 				if ($(this).attr("id") !== mid) {
 					$(this).addClass("fade");
@@ -12096,7 +12957,7 @@ hK2iJhPzXNK04Z9RHms0XCDjERq2oRwSyoraB0MRsV2suIlQakXNCarxIeBMSE2Bccxva+jtFQ==
 
 			$('g.active').toggleClass('active-left')
 			$('.data-btns').toggleClass('hidden')
-			$('#raasi').toggleClass('hidden')
+			$('#raasi').toggleClass('fadeIn')
 			$('.map-header-text').text(`${stateData.state_name}`)
 			$('.map-header-text').addClass('r-active')
 			$('.raTitle').toggleClass('hidden')
@@ -12113,6 +12974,7 @@ hK2iJhPzXNK04Z9RHms0XCDjERq2oRwSyoraB0MRsV2suIlQakXNCarxIeBMSE2Bccxva+jtFQ==
 			$('.opt-bf').html(`${stateData.percent_rassi_optimization_before_hk}<span>%</span>`)
 			$('.o-use').html(`${stateData.percent_overall_rassi_use}<span>%</span>`)
 
+			$('svg use').attr("xlink:href", `#${mid}`)
 			$("g#INDIVIDUAL_STATES_Full_Map_Master g").each(function () {
 				if ($(this).attr("id") !== mid) {
 					$(this).addClass("fade");
@@ -12135,12 +12997,12 @@ hK2iJhPzXNK04Z9RHms0XCDjERq2oRwSyoraB0MRsV2suIlQakXNCarxIeBMSE2Bccxva+jtFQ==
 		$('.line-pink').on('click', function(){
 			$('.bottom-nav div').removeClass('active')
 			$(this).addClass('active')
-			$('#kbinder').removeClass('hidden')
+			$('#kbinder').addClass('fadeIn')
 			$('.map-header-text').addClass('k-active')
 			$('.map-header-text').removeClass('re-active')
 			$('.map-header-text').removeClass('r-active')
-			$('#recurrence').addClass('hidden')
-			$('#raasi').addClass('hidden')
+			$('#recurrence').removeClass('fadeIn')
+			$('#raasi').removeClass('fadeIn')
 			$('.upper-text .kTitle').removeClass('hidden')
 			$('.upper-text .reTitle').addClass('hidden')
 			$('.upper-text .raTitle').addClass('hidden')
@@ -12154,9 +13016,9 @@ hK2iJhPzXNK04Z9RHms0XCDjERq2oRwSyoraB0MRsV2suIlQakXNCarxIeBMSE2Bccxva+jtFQ==
 			$('.map-header-text').addClass('re-active')
 			$('.map-header-text').removeClass('r-active')
 			$('.map-header-text').removeClass('k-active')
-			$('#recurrence').removeClass('hidden')
-			$('#raasi').addClass('hidden')
-			$('#kbinder').addClass('hidden')
+			$('#recurrence').addClass('fadeIn')
+			$('#raasi').removeClass('fadeIn')
+			$('#kbinder').removeClass('fadeIn')
 			$('.upper-text .kTitle').addClass('hidden')
 			$('.upper-text .reTitle').removeClass('hidden')
 			$('.upper-text .raTitle').addClass('hidden')
@@ -12170,9 +13032,9 @@ hK2iJhPzXNK04Z9RHms0XCDjERq2oRwSyoraB0MRsV2suIlQakXNCarxIeBMSE2Bccxva+jtFQ==
 			$('.map-header-text').addClass('r-active')
 			$('.map-header-text').removeClass('re-active')
 			$('.map-header-text').removeClass('k-active')
-			$('#raasi').removeClass('hidden')
-			$('#recurrence').addClass('hidden')
-			$('#kbinder').addClass('hidden')
+			$('#raasi').addClass('fadeIn')
+			$('#recurrence').removeClass('fadeIn')
+			$('#kbinder').removeClass('fadeIn')
 			$('.upper-text .kTitle').addClass('hidden')
 			$('.upper-text .reTitle').addClass('hidden')
 			$('.upper-text .raTitle').removeClass('hidden')
@@ -12195,19 +13057,19 @@ hK2iJhPzXNK04Z9RHms0XCDjERq2oRwSyoraB0MRsV2suIlQakXNCarxIeBMSE2Bccxva+jtFQ==
 			}else {
 				if($("#step").hasClass('detail-k')){
 					$("#step").removeClass("detail-k")
-					$('#kbinder').toggleClass('hidden')
+					$('#kbinder').removeClass('fadeIn')
 					$('.map-header-text').removeClass('k-active')
 					$('.kTitle').toggleClass('hidden')
 				}
 				if($("#step").hasClass('detail-re')){
 					$("#step").removeClass("detail-re")
-					$('#recurrence').toggleClass('hidden')
+					$('#recurrence').removeClass('fadeIn')
 					$('.map-header-text').removeClass('re-active')
 					$('.reTitle').toggleClass('hidden')
 				}
 				if($("#step").hasClass('detail-ra')){
 					$("#step").removeClass("detail-ra")
-					$('#raasi').toggleClass('hidden')
+					$('#raasi').removeClass('fadeIn')
 					$('.map-header-text').removeClass('r-active')
 					$('.raTitle').toggleClass('hidden')
 				}
