@@ -20,7 +20,9 @@
             @font-face { font-family: 'Lexia Rg'; src: url("./fonts/Lexia_Rg.ttf"); }
             @font-face { font-family: 'Lexia Bold'; src: url("./fonts/Lexia_Bd.ttf");}
             @font-face { font-family: 'Helvetica'; src: url("./fonts/HelveticaNeue.ttc");}
+		@font-face { font-family: 'Helvetica C'; src: url("./fonts/Helvetica_Neue_67_Medium_Condensed.otf");}
 		@font-face {font-family: "Avenir Bd";src: url("./fonts/AvenirLTStd-Heavy.otf");}
+		@font-face {font-family: "Avenir Rg";src: url("./fonts/AvenirLTStd-Medium.otf");}
 		text {
 			font-family: "Lexia Bold"!important;
 		}
@@ -198,12 +200,20 @@
 			display: flex;
 			justify-content: space-evenly;
 			height: 70px;
+			font-weight: 300;
+			font-family: sans-serif;
 		}
 		.bottom-nav div {
 			width: 33%;
 			display: flex;
 			align-items: center;
 			justify-content: center;
+			color: #fff;
+		}
+		.bottom-nav div p {
+			font-size: 28px;
+			margin: 0;
+			margin-top: -10px;
 		}
 		.line-pink {
 			position: absolute;
@@ -234,12 +244,15 @@
 		}
 		.line-pink.active{
 			border-bottom: 10px solid #d10066;
+			font-weight: bold;
 		}
 		.line-purple.active{
 			border-bottom: 10px solid #3c1152;
+			font-weight: bold;
 		}
 		.line-dark-blue.active{
 			border-bottom: 10px solid #003764;
+			font-weight: bold;
 		}
 		.bottom-nav img {
 			width: 100%;
@@ -269,19 +282,32 @@
             }
 		p.pnum {
 			position: absolute;
-			top: 76px;
-			font-size: 65px;
+			top: 83px;
+			font-size: 61px;
 			right: -700px;
+			color: #3c4543;
 		}
 		p.onlynum {
 			position: absolute;
 			top: 288px;
 			z-index: 5;
 			font-size: 67px;
-			left: 770px;
+			left: 580px;
 			color: #D6006D;
 			display: flex;
-			font-family: 'Avenir Bd';
+			font-family: 'Lexia Bold';
+			WIDTH: 400PX;
+		}
+		p.onlynum2 {
+			position: absolute;
+			top: 358px;
+			z-index: 5;
+			font-size: 62px;
+			left: 580px;
+			color: #D6006D;
+			display: flex;
+			font-family: 'Lexia Bold';
+			WIDTH: 400PX;
 		}
 		p.opt-bf {
     			position: absolute;
@@ -290,25 +316,37 @@
 			z-index: 5;
 			font-size: 131px;
 			display:flex;
-			font-family: 'Avenir Bd';
+			font-family: 'Lexia Bold';
 			color: #003764;
 		}
 		p.o-use {
 			position: absolute;
-			top: 300px;
-			left: 1210px;
+			top: 315px;
+			left: 1013px;
 			z-index: 5;
-			font-size: 78px;
-			display:flex;
-			font-family: 'Avenir Bd';
+			font-size: 68px;
+			display: flex;
+			font-family: 'Lexia Bold';
 			color: #003764;
+			WIDTH: 450PX;
+		}
+		p.o-use2 {
+			position: absolute;
+			top: 385px;
+			left: 1015px;
+			z-index: 5;
+			font-size: 63px;
+			display: flex;
+			font-family: 'Lexia Bold';
+			color: #003764;
+			WIDTH: 450PX;
 		}
 		p.opt-bf span {
 			font-size: 77px;
 			margin-left: 5px;
 		}
 		p.o-use span {
-			font-size: 50px;
+			font-size: 45px;
 		}
             /*=========================================*/
 		/* ACTIVE SCREENS SELECTED */
@@ -336,7 +374,7 @@
 		img.b-btn-k {
 			width: 392px;
 			position: absolute;
-			bottom: 16px;
+			bottom: -810px;
 			left: 975px;
 			z-index:-1;
 		}
@@ -351,7 +389,8 @@
 		#recurrence.fadeIn, #raasi.fadeIn , #kbinder.fadeIn{
 			visibility: visible!important;
 			opacity: 1!important;
-			transition: opacity 3.5s linear;
+			z-index: 1;
+			transition: opacity 3.5s, z-index 5.5s linear;
 		}
 		#kbinder h2, #raasi h2, #recurrence h2{
 			position: absolute;
@@ -373,9 +412,9 @@
 			left: 540px;
 		}
 		img.b-btn-r {
-			width: 68%;
+			width: 1267px;
 			position: absolute;
-			bottom: 19px;
+			bottom: -790px;
 			left: 539px;
 		}
 		img.kTitle, img.raTitle{
@@ -392,11 +431,14 @@
 		}
 		p.state-n {
 			position: absolute;
-			top: 362px;
-			right: -802px;
+			top: 320px;
+			right: -855px;
 			z-index: 5;
-			font-size: 35px;
-			font-family: 'Avenir Bd';
+			line-height: 40px;
+			font-size: 37px;
+			font-family: 'Helvetica C';
+			text-align: center;
+			color: #414042;
 		}
 		p.precurrence {
 			position: absolute;
@@ -406,7 +448,7 @@
 			z-index: 5;
 			display:flex;
 			color: #3c1152;
-			font-family: 'Avenir Bd';
+			font-family: 'Lexia Bold';
 		}
 		p.precurrence span {
 			font-size: 70px;
@@ -1108,7 +1150,7 @@
 			}
 			100% {
 				scale: 3;
-    				transform: translate(-1190px, -40%);
+    				transform: translate(-1270px, -40%);
 			}
 		}
 		#Maryland.active-left {
@@ -1288,8 +1330,12 @@
     				transform: translate(-1344px, -23%);
 			}
 		}
-
-		
+		img.pdiagnosed {
+			width: 636px;
+			position: absolute;
+			top: 164px;
+			left: 720px;
+		}
       </style>
 </head>
 <body style="margin: 0; padding: 0;">
@@ -1315,7 +1361,7 @@
             </div>
             <div class="map-holder"> 
                   <h2 class="map-header-text">
-                        Select your state and local data topic
+                        Select your state data topic
                   </h2>
                   <div class="map-c">
                         <!-- SVG  -->
@@ -12757,16 +12803,17 @@ hK2iJhPzXNK04Z9RHms0XCDjERq2oRwSyoraB0MRsV2suIlQakXNCarxIeBMSE2Bccxva+jtFQ==
       <img class="raasi" src="./assets/button_overall_RAASi_use.png" alt="RAASi" />
 </div>
 <div id="kbinder" >
-	<h2>patients diagnosed with <span class="bold">HK</span></h2>
+	<img class="pdiagnosed" src="./assets/patients_diagnosed_with_HK.png">
 	<p class="pnum"></p>
 	<p class="onlynum"></p>
+	<p class="onlynum2">of patients</p>
 	<img class="left" src="./assets/card_K+_binder_left.png"/>
 	<img class="center" src="./assets/card_K+_binder_center.png"/>
 	<img class="right"src="./assets/card_K+_binder_right.png"/>
 	<img class="b-btn-k"  onclick="showPopUp('#kguideline')" src="./assets/button_KDIGO_Guideline_Update.png" />
 </div>
 <div id="recurrence">
-	<h2>patients diagnosed with <span class="bold">HK</span></h2>
+	<img class="pdiagnosed" src="./assets/patients_diagnosed_with_HK.png">
 	<p class="pnum"></p>
 	<p class="precurrence"></p>
 	<p class="state-n"></p>
@@ -12776,9 +12823,10 @@ hK2iJhPzXNK04Z9RHms0XCDjERq2oRwSyoraB0MRsV2suIlQakXNCarxIeBMSE2Bccxva+jtFQ==
 </div>
 <div id="raasi" >
 	<p class="pnum"></p>
-	<h2>patients diagnosed with <span class="bold">HK</span></h2>
+	<img class="pdiagnosed" src="./assets/patients_diagnosed_with_HK.png">
 	<p class="opt-bf"></p>
 	<p class="o-use"></p>
+	<p class="o-use2">of patients</p>
 	<img class="left" src="./assets/card_RAASi_left.png"/>
 	<img class="center" src="./assets/card_RAASi_center.png"/>
 	<img class="right"src="./assets/card_RAASi_right.png"/>
@@ -12796,9 +12844,15 @@ hK2iJhPzXNK04Z9RHms0XCDjERq2oRwSyoraB0MRsV2suIlQakXNCarxIeBMSE2Bccxva+jtFQ==
 			<div class="home-btn" onclick="reset()"></div>
             </div>
 		<div class="bottom-nav hidden">
-			<div class="line-pink"></div>
-			<div class="line-purple"></div>
-			<div class="line-dark-blue"></div>
+			<div class="line-pink">
+				<p>K<span>+</span> BINDER UTILIZATION</p>
+			</div>
+			<div class="line-purple">
+				<p>HK RECURRENCE</p>
+			</div>
+			<div class="line-dark-blue">
+				<p>OVERALL RAASi USE AND OPTIMIZATION</p>
+			</div>
 			<img src="./assets/RAASi_guide_3.png" />
 		</div>
 		<div id="step" class="hidden home-step"></div>
@@ -12901,11 +12955,11 @@ hK2iJhPzXNK04Z9RHms0XCDjERq2oRwSyoraB0MRsV2suIlQakXNCarxIeBMSE2Bccxva+jtFQ==
 
 
 			$('.pnum').text(`${stateData.number_of_diagnosed_hk_patients}`)
-			$('.onlynum').html(`${stateData.kbinder_utilization_recurrence}<span>%</span>`)
+			$('.onlynum').html(`ONLY ${stateData.kbinder_utilization_recurrence}<span>%</span>`)
 			$('.precurrence').html(`${stateData.hk_recurrence}<span>%</span>`)
-			$('.state-n').text(`${stateData.state_name}`)
+			$('.state-n').html(`HK Recurrence in <br>${stateData.state_name} is`)
 			$('.opt-bf').html(`${stateData.percent_rassi_optimization_before_hk}<span>%</span>`)
-			$('.o-use').html(`${stateData.percent_overall_rassi_use}<span>%</span>`)
+			$('.o-use').html(`ONLY ${stateData.percent_overall_rassi_use}<span>%</span>`)
 
 			$('svg use').attr("xlink:href", `#${mid}`)
 			$("g#INDIVIDUAL_STATES_Full_Map_Master g").each(function () {
@@ -12935,11 +12989,11 @@ hK2iJhPzXNK04Z9RHms0XCDjERq2oRwSyoraB0MRsV2suIlQakXNCarxIeBMSE2Bccxva+jtFQ==
 			$('.line-purple').addClass('active')
 
 			$('.pnum').text(`${stateData.number_of_diagnosed_hk_patients}`)
-			$('.onlynum').html(`${stateData.kbinder_utilization_recurrence}<span>%</span>`)
+			$('.onlynum').html(`ONLY ${stateData.kbinder_utilization_recurrence}<span>%</span>`)
 			$('.precurrence').html(`${stateData.hk_recurrence}<span>%</span>`)
-			$('.state-n').text(`${stateData.state_name}`)
+			$('.state-n').html(`HK Recurrence in <br>${stateData.state_name} is`)
 			$('.opt-bf').html(`${stateData.percent_rassi_optimization_before_hk}<span>%</span>`)
-			$('.o-use').html(`${stateData.percent_overall_rassi_use}<span>%</span>`)
+			$('.o-use').html(`ONLY ${stateData.percent_overall_rassi_use}<span>%</span>`)
 
 			$('svg use').attr("xlink:href", `#${mid}`)
 			$("g#INDIVIDUAL_STATES_Full_Map_Master g").each(function () {
@@ -12968,11 +13022,11 @@ hK2iJhPzXNK04Z9RHms0XCDjERq2oRwSyoraB0MRsV2suIlQakXNCarxIeBMSE2Bccxva+jtFQ==
 			$('.line-dark-blue').addClass('active')
 
 			$('.pnum').text(`${stateData.number_of_diagnosed_hk_patients}`)
-			$('.onlynum').html(`${stateData.kbinder_utilization_recurrence}<span>%</span>`)
+			$('.onlynum').html(`ONLY ${stateData.kbinder_utilization_recurrence}<span>%</span>`)
 			$('.precurrence').html(`${stateData.hk_recurrence}<span>%</span>`)
-			$('.state-n').text(`${stateData.state_name}`)
+			$('.state-n').html(`HK Recurrence in <br>${stateData.state_name} is`)
 			$('.opt-bf').html(`${stateData.percent_rassi_optimization_before_hk}<span>%</span>`)
-			$('.o-use').html(`${stateData.percent_overall_rassi_use}<span>%</span>`)
+			$('.o-use').html(`ONLY ${stateData.percent_overall_rassi_use}<span>%</span>`)
 
 			$('svg use').attr("xlink:href", `#${mid}`)
 			$("g#INDIVIDUAL_STATES_Full_Map_Master g").each(function () {
@@ -13074,7 +13128,7 @@ hK2iJhPzXNK04Z9RHms0XCDjERq2oRwSyoraB0MRsV2suIlQakXNCarxIeBMSE2Bccxva+jtFQ==
 					$('.raTitle').toggleClass('hidden')
 				}
 				$("#step").addClass('home-step')
-				$('.map-header-text').text('Select your state and local data topic')
+				$('.map-header-text').text('Select your state data topic')
 				$('.homeTitle').toggleClass('hidden')
 				$('g.active').toggleClass('active-left')
 				$('g.active').toggleClass('active')
