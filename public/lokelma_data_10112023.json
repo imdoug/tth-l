@@ -8,7 +8,7 @@
         "percent_overall_rassi_use": "66",
         "state_name": "Connecticut"
     },
-    "Alaska": {
+    "Alabama": {
         "state": "AL",
         "number_of_diagnosed_hk_patients": "14,386",
         "kbinder_utilization_recurrence": "12",
@@ -251,7 +251,7 @@
         "percent_overall_rassi_use": "64",
         "state_name": "Ohio"
     },
-    "ennsylvania": {
+    "Pennsylvania": {
         "state": "PA",
         "number_of_diagnosed_hk_patients": "26,156",
         "kbinder_utilization_recurrence": "11",
