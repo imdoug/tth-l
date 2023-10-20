@@ -5,6 +5,7 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="Lokelma" content="width=device-width, initial-scale=1.0">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+	<script src="./idle.js"></script>
       <title>Document</title>
       <style>
             /* GLOBAL */
@@ -1346,10 +1347,14 @@
 			}
 		}
 		img.pdiagnosed {
-			width: 636px;
+			width: 530px;
 			position: absolute;
 			top: 164px;
 			left: 720px;
+		}
+		img.hk.pdiagnosed {
+			width: 80px;
+			left: 1260px;
 		}
       </style>
 </head>
@@ -12819,6 +12824,7 @@ hK2iJhPzXNK04Z9RHms0XCDjERq2oRwSyoraB0MRsV2suIlQakXNCarxIeBMSE2Bccxva+jtFQ==
 </div>
 <div id="kbinder" >
 	<img class="pdiagnosed" src="./assets/patients_diagnosed_with_HK.png">
+	<img class="pdiagnosed hk" src="./assets/HK.png">
 	<p class="pnum"></p>
 	<p class="onlynum"></p>
 	<p class="onlynum2">of patients</p>
@@ -12829,6 +12835,7 @@ hK2iJhPzXNK04Z9RHms0XCDjERq2oRwSyoraB0MRsV2suIlQakXNCarxIeBMSE2Bccxva+jtFQ==
 </div>
 <div id="recurrence">
 	<img class="pdiagnosed" src="./assets/patients_diagnosed_with_HK.png">
+	<img class="pdiagnosed hk" src="./assets/HK.png">
 	<p class="pnum"></p>
 	<p class="precurrence"></p>
 	<p class="state-n"></p>
@@ -12839,6 +12846,7 @@ hK2iJhPzXNK04Z9RHms0XCDjERq2oRwSyoraB0MRsV2suIlQakXNCarxIeBMSE2Bccxva+jtFQ==
 <div id="raasi" >
 	<p class="pnum"></p>
 	<img class="pdiagnosed" src="./assets/patients_diagnosed_with_HK.png">
+	<img class="pdiagnosed hk" src="./assets/HK.png">
 	<p class="opt-bf"></p>
 	<p class="o-use"></p>
 	<p class="o-use2">of patients</p>
@@ -13152,6 +13160,17 @@ hK2iJhPzXNK04Z9RHms0XCDjERq2oRwSyoraB0MRsV2suIlQakXNCarxIeBMSE2Bccxva+jtFQ==
 				$('.bottom-nav').toggleClass('hidden')
 			}
 		}
+		$(document).idleTimer({
+			timeout:60000,
+				idle: true
+			});
+           // function you want to fire when the user goes idle
+		$(document).on( "idle.idleTimer", function(event, elem, obj){
+			if(!$("#step").hasClass("home-step")){
+				reset()
+				console.log('idle runing outside the home screen ')
+			}
+		});
       </script>
 </body>
 </html>
