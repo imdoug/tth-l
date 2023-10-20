@@ -225,6 +225,15 @@
 			border-bottom: 10px solid transparent;
 			z-index: 99;
 		}
+		.line-pink p{
+			display: flex;
+   			align-items: flex-start;
+		}
+		.line-pink p span {
+			font-size: 16px;
+			margin-left: 3px;
+			margin-right: 3px;
+		}
 		.line-purple {
 			position: absolute;
 			bottom: 0px;
@@ -12957,6 +12966,8 @@ hK2iJhPzXNK04Z9RHms0XCDjERq2oRwSyoraB0MRsV2suIlQakXNCarxIeBMSE2Bccxva+jtFQ==
 				$("#step").removeClass('home-step')
 				$("#step").addClass('state-select-step')
                         $('.data-btns').attr('data-active', c.slice(0,c.length))
+				console.log($(this).attr('id'))
+				sendMess($(this).attr('id'))
                   })
             } 
             // IT WASNT WORKING ON THE LOOP SO I ADDED THEM INDIVIDUALY 
@@ -12976,6 +12987,7 @@ hK2iJhPzXNK04Z9RHms0XCDjERq2oRwSyoraB0MRsV2suIlQakXNCarxIeBMSE2Bccxva+jtFQ==
 			$("#step").addClass('detail-k')
 			$('.bottom-nav').toggleClass('hidden')
 			$('.line-pink').addClass('active')
+			sendMess('K+ binder Utilizationdetail')
 
 
 			$('.pnum').text(`${stateData.number_of_diagnosed_hk_patients}`)
@@ -13011,6 +13023,7 @@ hK2iJhPzXNK04Z9RHms0XCDjERq2oRwSyoraB0MRsV2suIlQakXNCarxIeBMSE2Bccxva+jtFQ==
 			$("#step").addClass('detail-re')
 			$('.bottom-nav').toggleClass('hidden')
 			$('.line-purple').addClass('active')
+			sendMess('HK Recurrencedetail')
 
 			$('.pnum').text(`${stateData.number_of_diagnosed_hk_patients}`)
 			$('.onlynum').html(`${stateData.kbinder_utilization_recurrence}<span>%</span>`)
@@ -13044,6 +13057,7 @@ hK2iJhPzXNK04Z9RHms0XCDjERq2oRwSyoraB0MRsV2suIlQakXNCarxIeBMSE2Bccxva+jtFQ==
 			$("#step").addClass('detail-ra')
 			$('.bottom-nav').toggleClass('hidden')
 			$('.line-dark-blue').addClass('active')
+			sendMess('Overall RAAsi use and optimizationdetail')
 
 			$('.pnum').text(`${stateData.number_of_diagnosed_hk_patients}`)
 			$('.onlynum').html(`${stateData.kbinder_utilization_recurrence}<span>%</span>`)
@@ -13066,6 +13080,16 @@ hK2iJhPzXNK04Z9RHms0XCDjERq2oRwSyoraB0MRsV2suIlQakXNCarxIeBMSE2Bccxva+jtFQ==
 		}
 		// POP UP FUNCTIONS 
             const showPopUp = (t) => {
+			if(t === "#definitions"){
+				sendMess("Data Source and Definitionsbtn")
+			}else if(t ==="#kguideline"){
+				sendMess("KDIGO guidelinebtn")
+			}else if(t ==="#references"){
+				sendMess("Abbreviations & Referencesbtn")
+			}else if(t ==="#study-design"){
+				sendMess("Study Designbtn")
+			}
+			//sendMess($(t).attr('data-name'))
                   $(t).toggleClass('hidden')
             }
             const hidePopUp = (m) => {
@@ -13087,6 +13111,7 @@ hK2iJhPzXNK04Z9RHms0XCDjERq2oRwSyoraB0MRsV2suIlQakXNCarxIeBMSE2Bccxva+jtFQ==
 			$('#step').addClass('detail-k')
 			$('#step').removeClass('detail-re')
 			$('#step').removeClass('detail-ra')
+			sendMess('K+ binder Utilizationdetail')
 		})
 		$('.line-purple').on('click', function(){
 			$('.bottom-nav div').removeClass('active')
@@ -13103,6 +13128,7 @@ hK2iJhPzXNK04Z9RHms0XCDjERq2oRwSyoraB0MRsV2suIlQakXNCarxIeBMSE2Bccxva+jtFQ==
 			$('#step').removeClass('detail-k')
 			$('#step').addClass('detail-re')
 			$('#step').removeClass('detail-ra')
+			sendMess('HK Recurrencedetail')
 		})
 		$('.line-dark-blue').on('click', function(){
 			$('.bottom-nav div').removeClass('active')
@@ -13119,6 +13145,7 @@ hK2iJhPzXNK04Z9RHms0XCDjERq2oRwSyoraB0MRsV2suIlQakXNCarxIeBMSE2Bccxva+jtFQ==
 			$('#step').removeClass('detail-k')
 			$('#step').removeClass('detail-re')
 			$('#step').addClass('detail-ra')
+			sendMess('Overall RAAsi use and optimizationdetail')
 		})
 		//HOME BUTTON 
 		const reset = () =>{
@@ -13171,6 +13198,25 @@ hK2iJhPzXNK04Z9RHms0XCDjERq2oRwSyoraB0MRsV2suIlQakXNCarxIeBMSE2Bccxva+jtFQ==
 				console.log('idle runing outside the home screen ')
 			}
 		});
+		const socket = io();
+            const sendMess = (mid)=>{
+			if(mid.includes('btn')){
+				let id = mid.slice(0,-3)
+				const date = new Date()
+				console.log(0,id)
+				socket.emit("r2", { button: id,timeStamp: String(date) })
+			}else if(mid.includes('detail')){
+				let name = $('g.active').attr('id')
+				let id = mid.slice(0,-6)
+				const date = new Date()
+				console.log(0,id)
+				socket.emit("r3", { page: id, state: name, timeStamp: String(date) })
+			}else{
+				let id = json[mid].state
+				const date = new Date()
+				socket.emit("r1", { state: id,timeStamp: String(date) })
+			}
+            }
       </script>
 </body>
 </html>
