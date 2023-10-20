@@ -12892,25 +12892,29 @@ hK2iJhPzXNK04Z9RHms0XCDjERq2oRwSyoraB0MRsV2suIlQakXNCarxIeBMSE2Bccxva+jtFQ==
       </div>
       <script src="/socket.io/socket.io.js"></script>
       <script>
-		const socket = io();
-            const sendMess = (mid)=>{
-			if(mid.includes('btn')){
-				let id = mid.slice(0,-3)
-				const date = new Date()
-				console.log(0,id)
-				socket.emit("r2", { button: id,timeStamp: String(date) })
-			}else if(mid.includes('detail')){
-				let name = $('g.active').attr('id')
-				let id = mid.slice(0,-6)
-				const date = new Date()
-				console.log(0,id)
-				socket.emit("r3", { page: id, state: name, timeStamp: String(date) })
-			}else{
-				let id = json[mid].state
-				const date = new Date()
-				socket.emit("r1", { state: id,timeStamp: String(date) })
-			}
-            }
+		////ONLY WORKS LOCALLY - ONLY REMOVE COMMENT WHEN IS READY TO RUN ON MACHINE 
+		////This will write on db.json file everytime the user clicks in an interactive part of the app
+		////r3 will write on the pages array, r2 will popUps on the state array and r1 will write on the stat array
+		
+		//const socket = io();
+            // const sendMess = (mid)=>{
+		// 	if(mid.includes('btn')){
+		// 		let id = mid.slice(0,-3)
+		// 		const date = new Date()
+		// 		console.log(0,id)
+		// 		socket.emit("r2", { button: id,timeStamp: String(date) })
+		// 	}else if(mid.includes('detail')){
+		// 		let name = $('g.active').attr('id')
+		// 		let id = mid.slice(0,-6)
+		// 		const date = new Date()
+		// 		console.log(0,id)
+		// 		socket.emit("r3", { page: id, state: name, timeStamp: String(date) })
+		// 	}else{
+		// 		let id = json[mid].state
+		// 		const date = new Date()
+		// 		socket.emit("r1", { state: id,timeStamp: String(date) })
+		// 	}
+            // }
             let states = [
                   "Wyoming",
                   "Wisconsin",
