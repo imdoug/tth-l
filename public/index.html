@@ -101,11 +101,8 @@
                   position: absolute;
                   bottom: 20px;
             }
-            img.dt-source-btn {
+            img.dt-source-btn, img.references-btn {
                   width: 300px;
-            }
-            img.references-btn {
-                  width: 150px;
             }
             .data-btns {
                   position: absolute;
@@ -164,7 +161,10 @@
                   margin-left: -50px;
                   margin-right: -106px;
             }
-            div#definitions img, div#references img , #study-design img ,#kguideline img{
+            div#definitions img, div#references img , #study-design img {
+                  width: 43%;
+            }
+		#kguideline img{
                   width: 100%;
             }
             div#definitions, div#references, #study-design, #kguideline{
@@ -292,11 +292,12 @@
 			top: 288px;
 			z-index: 5;
 			font-size: 67px;
-			left: 580px;
+			left: 537px;
 			color: #D6006D;
 			display: flex;
+			justify-content: center;
 			font-family: 'Lexia Bold';
-			WIDTH: 400PX;
+			WIDTH: 390PX;
 		}
 		p.onlynum2 {
 			position: absolute;
@@ -307,7 +308,7 @@
 			color: #D6006D;
 			display: flex;
 			font-family: 'Lexia Bold';
-			WIDTH: 400PX;
+			WIDTH: 390px
 		}
 		p.opt-bf {
     			position: absolute;
@@ -322,13 +323,14 @@
 		p.o-use {
 			position: absolute;
 			top: 315px;
-			left: 1013px;
+			left: 980px;
 			z-index: 5;
 			font-size: 68px;
 			display: flex;
 			font-family: 'Lexia Bold';
 			color: #003764;
-			WIDTH: 450PX;
+			WIDTH: 390PX;
+			justify-content: center;
 		}
 		p.o-use2 {
 			position: absolute;
@@ -347,6 +349,13 @@
 		}
 		p.o-use span {
 			font-size: 45px;
+		}
+		.study-design-btn{
+			width: 392px;
+			position: absolute;
+			height: 80px;
+			left: 1415px;
+			top: 620px;
 		}
             /*=========================================*/
 		/* ACTIVE SCREENS SELECTED */
@@ -414,11 +423,15 @@
 		img.b-btn-r {
 			width: 1267px;
 			position: absolute;
-			bottom: -790px;
+			bottom: -760px;
 			left: 539px;
 		}
-		img.kTitle, img.raTitle{
-			width: 90%;
+		img.kTitle{
+			width: 72%;
+			margin: 0 auto;
+		}
+		img.raTitle{
+			width: 92%;
 			margin: 0 auto;
 		}
 		img.reTitle{
@@ -432,13 +445,14 @@
 		p.state-n {
 			position: absolute;
 			top: 320px;
-			right: -855px;
+			right: -928px;
 			z-index: 5;
 			line-height: 40px;
 			font-size: 37px;
 			font-family: 'Helvetica C';
 			text-align: center;
 			color: #414042;
+			width: 390px;
 		}
 		p.precurrence {
 			position: absolute;
@@ -456,7 +470,7 @@
 		}
 		.onlynum span {
 			font-size: 40px;
-			margin-left: 5px;
+			margin-left: 10px;
 		}
             /* ANIMATION BASE TO MOVE STATE TO LEFT */
 		/*IN*/
@@ -12830,7 +12844,8 @@ hK2iJhPzXNK04Z9RHms0XCDjERq2oRwSyoraB0MRsV2suIlQakXNCarxIeBMSE2Bccxva+jtFQ==
 	<img class="left" src="./assets/card_RAASi_left.png"/>
 	<img class="center" src="./assets/card_RAASi_center.png"/>
 	<img class="right"src="./assets/card_RAASi_right.png"/>
-	<img class="b-btn-r" onclick="showPopUp('#study-design')" src="./assets/button_study_design.png" />
+	<div class="study-design-btn" onclick="showPopUp('#study-design')"></div>
+	<img class="b-btn-r"src="./assets/button_study_design.png" />
 </div>
 
                         <!-- ============= -->
@@ -12955,11 +12970,11 @@ hK2iJhPzXNK04Z9RHms0XCDjERq2oRwSyoraB0MRsV2suIlQakXNCarxIeBMSE2Bccxva+jtFQ==
 
 
 			$('.pnum').text(`${stateData.number_of_diagnosed_hk_patients}`)
-			$('.onlynum').html(`ONLY ${stateData.kbinder_utilization_recurrence}<span>%</span>`)
+			$('.onlynum').html(`${stateData.kbinder_utilization_recurrence}<span>%</span>`)
 			$('.precurrence').html(`${stateData.hk_recurrence}<span>%</span>`)
 			$('.state-n').html(`HK Recurrence in <br>${stateData.state_name} is`)
 			$('.opt-bf').html(`${stateData.percent_overall_rassi_use}<span>%</span>`)
-			$('.o-use').html(`ONLY ${stateData.percent_rassi_optimization_before_hk}<span>%</span>`)
+			$('.o-use').html(`${stateData.percent_rassi_optimization_before_hk}<span>%</span>`)
 
 			$('svg use').attr("xlink:href", `#${mid}`)
 			$("g#INDIVIDUAL_STATES_Full_Map_Master g").each(function () {
@@ -12989,11 +13004,11 @@ hK2iJhPzXNK04Z9RHms0XCDjERq2oRwSyoraB0MRsV2suIlQakXNCarxIeBMSE2Bccxva+jtFQ==
 			$('.line-purple').addClass('active')
 
 			$('.pnum').text(`${stateData.number_of_diagnosed_hk_patients}`)
-			$('.onlynum').html(`ONLY ${stateData.kbinder_utilization_recurrence}<span>%</span>`)
+			$('.onlynum').html(`${stateData.kbinder_utilization_recurrence}<span>%</span>`)
 			$('.precurrence').html(`${stateData.hk_recurrence}<span>%</span>`)
 			$('.state-n').html(`HK Recurrence in <br>${stateData.state_name} is`)
 			$('.opt-bf').html(`${stateData.percent_overall_rassi_use}<span>%</span>`)
-			$('.o-use').html(`ONLY ${stateData.percent_rassi_optimization_before_hk}<span>%</span>`)
+			$('.o-use').html(`${stateData.percent_rassi_optimization_before_hk}<span>%</span>`)
 
 			$('svg use').attr("xlink:href", `#${mid}`)
 			$("g#INDIVIDUAL_STATES_Full_Map_Master g").each(function () {
@@ -13022,11 +13037,11 @@ hK2iJhPzXNK04Z9RHms0XCDjERq2oRwSyoraB0MRsV2suIlQakXNCarxIeBMSE2Bccxva+jtFQ==
 			$('.line-dark-blue').addClass('active')
 
 			$('.pnum').text(`${stateData.number_of_diagnosed_hk_patients}`)
-			$('.onlynum').html(`ONLY ${stateData.kbinder_utilization_recurrence}<span>%</span>`)
+			$('.onlynum').html(`${stateData.kbinder_utilization_recurrence}<span>%</span>`)
 			$('.precurrence').html(`${stateData.hk_recurrence}<span>%</span>`)
 			$('.state-n').html(`HK Recurrence in <br>${stateData.state_name} is`)
 			$('.opt-bf').html(`${stateData.percent_overall_rassi_use}<span>%</span>`)
-			$('.o-use').html(`ONLY ${stateData.percent_rassi_optimization_before_hk}<span>%</span>`)
+			$('.o-use').html(`${stateData.percent_rassi_optimization_before_hk}<span>%</span>`)
 
 			$('svg use').attr("xlink:href", `#${mid}`)
 			$("g#INDIVIDUAL_STATES_Full_Map_Master g").each(function () {
