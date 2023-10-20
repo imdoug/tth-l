@@ -12895,7 +12895,7 @@ hK2iJhPzXNK04Z9RHms0XCDjERq2oRwSyoraB0MRsV2suIlQakXNCarxIeBMSE2Bccxva+jtFQ==
 		////ONLY WORKS LOCALLY - ONLY REMOVE COMMENT WHEN IS READY TO RUN ON MACHINE 
 		////This will write on db.json file everytime the user clicks in an interactive part of the app
 		////r3 will write on the pages array, r2 will popUps on the state array and r1 will write on the stat array
-		
+
 		//const socket = io();
             // const sendMess = (mid)=>{
 		// 	if(mid.includes('btn')){
@@ -12990,7 +12990,7 @@ hK2iJhPzXNK04Z9RHms0XCDjERq2oRwSyoraB0MRsV2suIlQakXNCarxIeBMSE2Bccxva+jtFQ==
 				$("#step").addClass('state-select-step')
                         $('.data-btns').attr('data-active', c.slice(0,c.length))
 				console.log($(this).attr('id'))
-				sendMess($(this).attr('id'))
+				//sendMess($(this).attr('id'))
                   })
             } 
             // IT WASNT WORKING ON THE LOOP SO I ADDED THEM INDIVIDUALY 
@@ -13010,7 +13010,7 @@ hK2iJhPzXNK04Z9RHms0XCDjERq2oRwSyoraB0MRsV2suIlQakXNCarxIeBMSE2Bccxva+jtFQ==
 			$("#step").addClass('detail-k')
 			$('.bottom-nav').toggleClass('hidden')
 			$('.line-pink').addClass('active')
-			sendMess('K+ binder Utilizationdetail')
+			//sendMess('K+ binder Utilizationdetail')
 
 
 			$('.pnum').text(`${stateData.number_of_diagnosed_hk_patients}`)
@@ -13046,7 +13046,7 @@ hK2iJhPzXNK04Z9RHms0XCDjERq2oRwSyoraB0MRsV2suIlQakXNCarxIeBMSE2Bccxva+jtFQ==
 			$("#step").addClass('detail-re')
 			$('.bottom-nav').toggleClass('hidden')
 			$('.line-purple').addClass('active')
-			sendMess('HK Recurrencedetail')
+			//sendMess('HK Recurrencedetail')
 
 			$('.pnum').text(`${stateData.number_of_diagnosed_hk_patients}`)
 			$('.onlynum').html(`${stateData.kbinder_utilization_recurrence}<span>%</span>`)
@@ -13080,7 +13080,7 @@ hK2iJhPzXNK04Z9RHms0XCDjERq2oRwSyoraB0MRsV2suIlQakXNCarxIeBMSE2Bccxva+jtFQ==
 			$("#step").addClass('detail-ra')
 			$('.bottom-nav').toggleClass('hidden')
 			$('.line-dark-blue').addClass('active')
-			sendMess('Overall RAAsi use and optimizationdetail')
+			//sendMess('Overall RAAsi use and optimizationdetail')
 
 			$('.pnum').text(`${stateData.number_of_diagnosed_hk_patients}`)
 			$('.onlynum').html(`${stateData.kbinder_utilization_recurrence}<span>%</span>`)
@@ -13104,15 +13104,14 @@ hK2iJhPzXNK04Z9RHms0XCDjERq2oRwSyoraB0MRsV2suIlQakXNCarxIeBMSE2Bccxva+jtFQ==
 		// POP UP FUNCTIONS 
             const showPopUp = (t) => {
 			if(t === "#definitions"){
-				sendMess("Data Source and Definitionsbtn")
+				//sendMess("Data Source and Definitionsbtn")
 			}else if(t ==="#kguideline"){
-				sendMess("KDIGO guidelinebtn")
+				//sendMess("KDIGO guidelinebtn")
 			}else if(t ==="#references"){
-				sendMess("Abbreviations & Referencesbtn")
+				//sendMess("Abbreviations & Referencesbtn")
 			}else if(t ==="#study-design"){
-				sendMess("Study Designbtn")
+				//sendMess("Study Designbtn")
 			}
-			//sendMess($(t).attr('data-name'))
                   $(t).toggleClass('hidden')
             }
             const hidePopUp = (m) => {
@@ -13134,7 +13133,7 @@ hK2iJhPzXNK04Z9RHms0XCDjERq2oRwSyoraB0MRsV2suIlQakXNCarxIeBMSE2Bccxva+jtFQ==
 			$('#step').addClass('detail-k')
 			$('#step').removeClass('detail-re')
 			$('#step').removeClass('detail-ra')
-			sendMess('K+ binder Utilizationdetail')
+			//sendMess('K+ binder Utilizationdetail')
 		})
 		$('.line-purple').on('click', function(){
 			$('.bottom-nav div').removeClass('active')
@@ -13151,7 +13150,7 @@ hK2iJhPzXNK04Z9RHms0XCDjERq2oRwSyoraB0MRsV2suIlQakXNCarxIeBMSE2Bccxva+jtFQ==
 			$('#step').removeClass('detail-k')
 			$('#step').addClass('detail-re')
 			$('#step').removeClass('detail-ra')
-			sendMess('HK Recurrencedetail')
+			//sendMess('HK Recurrencedetail')
 		})
 		$('.line-dark-blue').on('click', function(){
 			$('.bottom-nav div').removeClass('active')
@@ -13168,7 +13167,7 @@ hK2iJhPzXNK04Z9RHms0XCDjERq2oRwSyoraB0MRsV2suIlQakXNCarxIeBMSE2Bccxva+jtFQ==
 			$('#step').removeClass('detail-k')
 			$('#step').removeClass('detail-re')
 			$('#step').addClass('detail-ra')
-			sendMess('Overall RAAsi use and optimizationdetail')
+			//sendMess('Overall RAAsi use and optimizationdetail')
 		})
 		//HOME BUTTON 
 		const reset = () =>{
