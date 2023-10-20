@@ -12989,14 +12989,14 @@ hK2iJhPzXNK04Z9RHms0XCDjERq2oRwSyoraB0MRsV2suIlQakXNCarxIeBMSE2Bccxva+jtFQ==
 				$("#step").removeClass('home-step')
 				$("#step").addClass('state-select-step')
                         $('.data-btns').attr('data-active', c.slice(0,c.length))
-				console.log($(this).attr('id'))
+				//console.log($(this).attr('id'))
 				//sendMess($(this).attr('id'))
                   })
             } 
             // IT WASNT WORKING ON THE LOOP SO I ADDED THEM INDIVIDUALY 
 		$('.kbinder').on('click', function (e){
 			e.stopPropagation()
-			console.log($(this))
+			//console.log($(this))
 			let mid = $('g.active').attr('id')
 			let stateData = json[mid];
 			$('#kbinder').toggleClass('fadeIn')
@@ -13031,7 +13031,7 @@ hK2iJhPzXNK04Z9RHms0XCDjERq2oRwSyoraB0MRsV2suIlQakXNCarxIeBMSE2Bccxva+jtFQ==
 
             $('.recurrence').on('click', function (e){
                   e.stopPropagation()
-			console.log($(this))
+			//console.log($(this))
 			let mid = $('g.active').attr('id')
 			let stateData = json[mid];
 
@@ -13065,7 +13065,7 @@ hK2iJhPzXNK04Z9RHms0XCDjERq2oRwSyoraB0MRsV2suIlQakXNCarxIeBMSE2Bccxva+jtFQ==
 
             $('.raasi').on('click', function (e){
 			e.stopPropagation()
-			console.log($(this))
+			//console.log($(this))
 			let mid = $('g.active').attr('id')
 			let stateData = json[mid];
 
@@ -13217,7 +13217,7 @@ hK2iJhPzXNK04Z9RHms0XCDjERq2oRwSyoraB0MRsV2suIlQakXNCarxIeBMSE2Bccxva+jtFQ==
 		$(document).on( "idle.idleTimer", function(event, elem, obj){
 			if(!$("#step").hasClass("home-step")){
 				reset()
-				console.log('idle runing outside the home screen ')
+				//console.log('idle runing outside the home screen ')
 			}
 		});
       </script>
