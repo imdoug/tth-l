@@ -1161,8 +1161,8 @@
 				scale: 1;
 			}
 			100% {
-				scale: 3;
-    				transform: translate(-1240px, -39%);
+				scale: 4;
+    				transform: translate(-1305px, -43%);
 			}
 		}
 		#District_of_Columbia.active-left {
@@ -1193,8 +1193,8 @@
 				scale: 1;
 			}
 			100% {
-				scale: 4;
-    				transform: translate(-1305px, -43%);
+				scale: 3;
+    				transform: translate(-1240px, -39%);
 			}
 		}
 		#New_Jersey.active-left {
@@ -2045,8 +2045,8 @@
 					<text transform="matrix(1 0 0 1 1393.9501 558.8525)" class="st3 st10 st15">MA</text>
 				</g>
 			</g>
-			<g id="Maryland">
-				<text transform="matrix(1 0 0 1 1377.0282 640.1827)" class="st12 st10 st15">MD</text>
+			<g id="Delaware">
+				<text transform="matrix(1 0 0 1 1377.0282 640.1827)" class="st12 st10 st15">DE</text>
 				<line class="st16" x1="1375.3" y1="635.9" x2="1368.5" y2="635.9"/>
 				<path class="st12" d="M1358.8,621.3l-0.1,0l-0.1,0.1c-0.3,0.3-1,1.3-1.4,2.1l0,0.3l6.9,23.2l0.1,0.3l0.3-0.1l8.2-1.6
 					c0.1-0.1,0.2-0.2,0.2-0.3c0.4-1.1-0.2-1.8-1.3-2.2c-1.6-0.6,0.6-1.4,0.4-2.3c-0.2-1.6-1-1.5-2.3-1.5c0,0,0,0,0,0
@@ -2241,7 +2241,7 @@
 					C1331,650.9,1331,650.9,1331,650.9c-0.2,0.2,0.3,0.4,0.5,0.6c0.1,0.1,0.2,0,0.4,0c0.2,0,0.6,0.3,0.6,0.1
 					c0.1-0.2-0.1-0.1-0.7-0.4C1331.6,651.1,1331.2,650.8,1331,650.9z"/>
 			</g>
-			<g id="Delaware">
+			<g id="Maryland">
 				<path class="st12" d="M1371.7,649.2c-0.7-0.1-1.1-0.3-1.5-0.9c-0.1-0.1-0.1-0.1-0.1-0.1c0.1,0,0.2,0,0.4-0.2c0,0,0,0,0,0
 					l-7.7,1.5c0,0,0,0-0.1,0c-0.2,0-0.3-0.1-0.4-0.3l-7-24.6l-0.1-0.3l-0.3,0.1c-4.5,1-54.4,9.2-55.8,9.5l-0.4,0.1l0.1,0.4l1.2,9.4
 					l0.1,0.8l0.5-0.6c0.1-0.1,0.2-0.2,0.3-0.3c0.1-0.1,0.2-0.2,0.4-0.4l0.1-0.1c7.4-9.7,11.1-8.1,11.5-8.1c0,0,0,0,0,0
@@ -2278,7 +2278,7 @@
 					c0.9-0.3,1.5-1.1,2.5-1c-0.5,0.5-1,0.9-1.3,1.6c-0.1,0.1-0.1,0.7,0.2,0.6c0.5-0.2,1.1-0.6,1.7-0.7c-0.8,0.9-2.3,1.7-1.6,2.9
 					c0,0,0.1,0,0.1,0.1c0.6-0.1,1.2-0.3,1.9-0.5c1.4-0.7,4.7-2.3,5.9-3c0-0.2,0.1-0.5,0.1-0.8c0-0.4,0-0.7-0.2-0.5
 					c0.5-0.5,0.9-1.4,1-2.1c0.2-1.7,1,0.5,1.5-1.1C1371.9,651.4,1372.4,649.3,1371.7,649.2z"/>
-				<text transform="matrix(1 0 0 1 1331.7147 637.9193)" class="st3 st10 st15">DE</text>
+				<text transform="matrix(1 0 0 1 1331.7147 637.9193)" class="st3 st10 st15">MD</text>
 			</g>
 			<g id="Connecticut">
 				<path class="st12" d="M1412.1,573.3c0,0.6-0.4,1.7-0.3,2.2l0,0.1c-0.3-0.1-0.7-0.2-0.9-0.1c-0.3,0.2-0.6,1.2-1,1.4
@@ -12895,29 +12895,34 @@ hK2iJhPzXNK04Z9RHms0XCDjERq2oRwSyoraB0MRsV2suIlQakXNCarxIeBMSE2Bccxva+jtFQ==
       </div>
       <script src="/socket.io/socket.io.js"></script>
       <script>
-		////ONLY WORKS LOCALLY - ONLY REMOVE COMMENT WHEN IS READY TO RUN ON MACHINE 
+		//// UNCOMMENT THE sendMess FUNCTIONS WHEN YOU MAKE THE ZIP FOR PROD, OTHERWISE IT WONT RECORD THE CLICKS
 		////This will write on db.json file everytime the user clicks in an interactive part of the app
-		////r3 will write on the pages array, r2 will popUps on the state array and r1 will write on the stat array
+		////r3 will write on the pages array, r2 will buttons on the state array and r1 will write on the stat array
 
-		//const socket = io();
-            // const sendMess = (mid)=>{
-		// 	if(mid.includes('btn')){
-		// 		let id = mid.slice(0,-3)
-		// 		const date = new Date()
-		// 		console.log(0,id)
-		// 		socket.emit("r2", { button: id,timeStamp: String(date) })
-		// 	}else if(mid.includes('detail')){
-		// 		let name = $('g.active').attr('id')
-		// 		let id = mid.slice(0,-6)
-		// 		const date = new Date()
-		// 		console.log(0,id)
-		// 		socket.emit("r3", { page: id, state: name, timeStamp: String(date) })
-		// 	}else{
-		// 		let id = json[mid].state
-		// 		const date = new Date()
-		// 		socket.emit("r1", { state: id,timeStamp: String(date) })
-		// 	}
-            // }
+		const socket = io();
+            const sendMess = (mid)=>{
+			if(mid.includes('btn')){
+				let id = mid.slice(0,-3)
+				const date = new Date()
+				console.log(0,id)
+				socket.emit("r2", { button: id,timeStamp: String(date) })
+			}else if(mid.includes('detail')){
+				let name = $('g.active').attr('id')
+				let id = mid.slice(0,-6)
+				const date = new Date()
+				console.log(0,id)
+				socket.emit("r3", { page: id, state: name, timeStamp: String(date) })
+			}else if (mid === "Home"){
+				let id = mid.slice
+				const date = new Date()
+				console.log(0,id)
+				socket.emit("r2", { button: id,timeStamp: String(date) })
+		 	}else{
+				let id = json[mid].state
+				const date = new Date()
+				socket.emit("r1", { state: id,timeStamp: String(date) })
+			}
+            }
             let states = [
                   "Wyoming",
                   "Wisconsin",
@@ -13211,6 +13216,7 @@ hK2iJhPzXNK04Z9RHms0XCDjERq2oRwSyoraB0MRsV2suIlQakXNCarxIeBMSE2Bccxva+jtFQ==
 				$('g.fade').toggleClass('fade')
 				$('.bottom-nav').toggleClass('hidden')
 			}
+			//sendMess('Homebtn')
 		}
 		$(document).idleTimer({
 			timeout:60000,
