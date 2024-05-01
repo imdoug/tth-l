@@ -170,7 +170,7 @@
         "percent_overall_rassi_use": "46",
         "state_name": "Kentucky"
     },
-    "Louisiana": {
+    "Lousiana": {
         "state": "LA",
         "number_of_diagnosed_hk_patients": "18,052",
         "kbinder_utilization_recurrence": "13",
@@ -179,7 +179,7 @@
         "percent_overall_rassi_use": "43",
         "state_name": "Louisiana"
     },
-    "Massachusetts": {
+    "Massachusetts_3_": {
         "state": "MA",
         "number_of_diagnosed_hk_patients": "10,310",
         "kbinder_utilization_recurrence": "14",
@@ -197,7 +197,7 @@
         "percent_overall_rassi_use": "39",
         "state_name": "Maryland"
     },
-    "Maine": {
+    "Maine_3_": {
         "state": "ME",
         "number_of_diagnosed_hk_patients": "1,893",
         "kbinder_utilization_recurrence": "10",
@@ -206,7 +206,7 @@
         "percent_overall_rassi_use": "47",
         "state_name": "Maine"
     },
-    "Michigan": {
+    "Michigan_3_": {
         "state": "MI",
         "number_of_diagnosed_hk_patients": "29,905",
         "kbinder_utilization_recurrence": "10",
