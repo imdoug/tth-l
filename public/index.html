@@ -12911,7 +12911,7 @@ hK2iJhPzXNK04Z9RHms0XCDjERq2oRwSyoraB0MRsV2suIlQakXNCarxIeBMSE2Bccxva+jtFQ==
 				let id = mid.slice(0,-6)
 				const date = new Date()
 				console.log(0,id)
-				socket.emit("r3", { page: id, state: name, timeStamp: String(date) })
+				socket.emit("r3", { button: id, state: name, timeStamp: String(date) })
 			}else if (mid === "Home"){
 				let id = mid.slice
 				const date = new Date()
@@ -12920,7 +12920,7 @@ hK2iJhPzXNK04Z9RHms0XCDjERq2oRwSyoraB0MRsV2suIlQakXNCarxIeBMSE2Bccxva+jtFQ==
 		 	}else{
 				let id = json[mid].state
 				const date = new Date()
-				socket.emit("r1", { state: id,timeStamp: String(date) })
+				socket.emit("r1", { button: id,timeStamp: String(date) })
 			}
             }
             let states = [
@@ -12979,7 +12979,7 @@ hK2iJhPzXNK04Z9RHms0XCDjERq2oRwSyoraB0MRsV2suIlQakXNCarxIeBMSE2Bccxva+jtFQ==
 		// FUNCTIONS ---------------------------------------------
 		      // FETCHING THE JSON
 			let json;
-     			fetch("./lokelma_data_10112023.json")
+     			fetch("./lokelmaData_04292024.json")
         		.then((response) => response.json())
         		.then((data) => (json = data))
         		.catch((error) => console.log(error));
