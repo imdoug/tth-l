@@ -452,7 +452,6 @@
     "Wisconsin": {
         "state": "WI",
         "number_of_diagnosed_hk_patients": "7,782",
-        "kbinder_utilization_recurrence": "9",
         "hk_recurrence": "46",
         "percent_rassi_optimization_before_hk": "63",
         "percent_overall_rassi_use": "43",
